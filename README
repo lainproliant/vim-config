@@ -1,0 +1,42 @@
+------- Lee's Vim Configs -------
+
+These are my personal Vim configs.  They are a collection of my vimrc,
+gvimrc, plugins, extra syntax files, and color schemes I have collected.
+
+I will document the plugins, settings, and ctags files included in this package
+below.
+
+
+------- Plugins and Such -------
+
+ScrollColor.vim:   
+   Enables a command ":SCROLL" which allows you to scroll through all of your
+   installed colorschemes and see which one you like with your currently open
+   buffers.
+
+------- Happy Colorschemes -------
+
+There are many colorschemes included in this package, most are from the Vim
+Color Scheme Test at http://code.google.com/p/vimcolorschemetest/
+
+Several of the colorschemes are my own!
+
+auburn (gvim):
+   A strictly dark orange color theme.  Designed to look like an old auburn
+   text terminal if it had brightness-based highlighting capabilities.
+
+malice (gvim):
+   Similar to auburn, but in green.
+
+contempt (gvim):
+   Honestly, not very readable and has bad contrast.  Don't use this one.
+
+pacificc (gvim):
+   A colorscheme honoring the wonderful old DOS C compiler and IDE from
+   Hi-tech Software.  I love this colorscheme.
+
+lainproliant (vim)
+   A theme I'm working on.  For color terminals, loosely based on pacificc,
+   but written before it, so maybe not.
+
+
