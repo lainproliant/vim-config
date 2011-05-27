@@ -7,6 +7,7 @@ set softtabstop=3 " The number of spaces inserted by Tab in insert mode.
 set ruler         " Show the line and column number of the cursor position.
 set showmode      " Show the current editing mode at the bottom.
 set hlsearch      " Highlight matches of the current or previous search.
+set nocompatible  " Non-VI compatible mode.
 
 
 " These lines disable the creation of backup and swap files.
@@ -39,4 +40,9 @@ command Horizontal   :windo wincmd K
 command Vertical     :windo wincmd H
 
 set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
+
+" Include special configs.
+source $HOME/.vim/omnicomplete-settings.vim
+source $HOME/.vim/ctags-settings.vim
+
 
