@@ -4,10 +4,10 @@ set guioptions-=T
 set guioptions-=r
 set guioptions-=L
 
-colorscheme ekvoli
+colorscheme mustang
 
 " These settings are valid for MacVim.
-" set guifont=Droid_Sans_Mono:h10
+" set guifont=Luxi_Mono:h12
 " set transparency=15
 
 " These settings are valid for GVim on X11 using xft.
