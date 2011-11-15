@@ -25,8 +25,13 @@ map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
 
+" Map Ctrl+n to next diff and Ctrl+p to prev diff.
+map ]c <c-n>
+map [c <c-p>
+
 " Enable filetype plugin loading and indention.
-filetype plugin indent on
+" This cannot be enabled here if using Vundle.
+" filetype plugin indent on
 
 " Syntax highlighting settings.
 syntax on
@@ -45,3 +50,7 @@ set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
 source $HOME/.vim/omnicomplete-settings.vim
 source $HOME/.vim/ctags-settings.vim
 source $HOME/.vim/netrw-settings.vim
+
+" Include configs for Vundle.
+source $HOME/.vim/vundle-settings.vim
+
