@@ -8,10 +8,11 @@ colorscheme mustang
 
 " These settings are valid for MacVim.
 " set guifont=Luxi_Mono:h12
-" set transparency=15
+set guifont=Droid_Sans_Mono:h12
+set transparency=0
 
 " These settings are valid for GVim on X11 using xft.
-set guifont=Luxi\ Mono\ 10
+" set guifont=Luxi\ Mono\ 10
 
 " Block out annoying middle-mouse clicks from pasting
 " links or whatever else is in the clipboard.

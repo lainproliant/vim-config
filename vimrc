@@ -43,6 +43,7 @@ syn match Parens /[\[\](){}]/
 " Aliases for re-orientation of split windows.
 command Horizontal   :windo wincmd K
 command Vertical     :windo wincmd H
+command Term         :ConqueTerm bash
 
 set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
 
