@@ -53,7 +53,7 @@ source $HOME/.vim/ctags-settings.vim
 source $HOME/.vim/netrw-settings.vim
 
 " Include configs for Vundle.
-source $HOME/.vim/vundle-settings.vim
+" source $HOME/.vim/vundle-settings.vim
 
 " Disable awesome beepy sounds.
 set noeb vb t_vb=
