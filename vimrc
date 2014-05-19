@@ -56,5 +56,5 @@ source $HOME/.vim/netrw-settings.vim
 " source $HOME/.vim/vundle-settings.vim
 
 " Disable awesome beepy sounds.
-set noeb vb t_vb=
+set noeb novb
 

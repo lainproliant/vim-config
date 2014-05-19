@@ -13,6 +13,9 @@ set transparency=15
 
 " These settings are valid for GVim on X11 using xft.
 " set guifont=Luxi\ Mono\ 11
+set guifont=Luxi\ Mono\ 14
+
+set mousemodel=popup
 
 " Block out annoying middle-mouse clicks from pasting
 " links or whatever else is in the clipboard.
