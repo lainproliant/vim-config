@@ -29,13 +29,9 @@ map <c-h> <c-w>h
 map ]c <c-n>
 map [c <c-p>
 
-" Enable filetype plugin loading and indention.
-" This cannot be enabled here if using Vundle.
-" filetype plugin indent on
-
 " Syntax highlighting settings.
 syntax on
-colorscheme desert
+colorscheme elflord
 
 " Create a special group for parens
 syn match Parens /[\[\](){}]/
@@ -52,9 +48,12 @@ source $HOME/.vim/omnicomplete-settings.vim
 source $HOME/.vim/ctags-settings.vim
 source $HOME/.vim/netrw-settings.vim
 
-" Include configs for Vundle.
-" source $HOME/.vim/vundle-settings.vim
-
 " Disable awesome beepy sounds.
 set noeb novb
+
+" Pathogen Initialization and stupid fixes
+execute pathogen#infect()
+filetype off
+syntax on
+filetype plugin indent on
 
