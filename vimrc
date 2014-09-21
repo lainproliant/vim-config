@@ -51,6 +51,11 @@ source $HOME/.vim/netrw-settings.vim
 " Disable awesome beepy sounds.
 set noeb novb
 
+" Set vizardry git method to 'submodule add' so that
+" vizardry creates Git submodules instead of messy
+" nested repositories.
+let g:VizardryGitMethod="submodule add"
+
 " Pathogen Initialization and stupid fixes
 execute pathogen#infect()
 filetype off
