@@ -1,0 +1,6 @@
+[submodule "bundle/vizardry"]
+	path = bundle/vizardry
+	url = https://github.com/ardagnir/vizardry
+[submodule "bundle/united-front"]
+	path = bundle/united-front
+	url = https://github.com/ardagnir/united-front
