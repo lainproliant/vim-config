@@ -4,9 +4,6 @@
 [submodule "bundle/united-front"]
 	path = bundle/united-front
 	url = https://github.com/ardagnir/united-front
-[submodule "bundle/SuperTab"]
-	path = bundle/SuperTab
-	url = https://github.com/ervandew/supertab
 [submodule "bundle/spreadsheet.vim"]
 	path = bundle/spreadsheet.vim
 	url = https://github.com/vim-scripts/spreadsheet.vim
