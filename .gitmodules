@@ -7,3 +7,6 @@
 [submodule "bundle/spreadsheet.vim"]
 	path = bundle/spreadsheet.vim
 	url = https://github.com/vim-scripts/spreadsheet.vim
+[submodule "bundle/vim-markdown"]
+	path = bundle/vim-markdown
+	url = https://github.com/plasticboy/vim-markdown
