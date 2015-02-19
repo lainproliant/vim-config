@@ -31,7 +31,7 @@ map [c <c-p>
 
 " Syntax highlighting settings.
 syntax on
-colorscheme elflord
+colorscheme ekvoli
 
 " Aliases for re-orientation of split windows.
 command Horizontal   :windo wincmd K
@@ -58,3 +58,5 @@ syntax on
 filetype plugin indent on
 
 let g:ycm_always_populate_location_list = 1
+
+set t_Co=256
