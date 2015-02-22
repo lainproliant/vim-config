@@ -31,7 +31,7 @@ map [c <c-p>
 
 " Syntax highlighting settings.
 syntax on
-colorscheme elflord
+colorscheme ekvoli
 
 " Aliases for re-orientation of split windows.
 command Horizontal   :windo wincmd K
