@@ -58,3 +58,5 @@ syntax on
 filetype plugin indent on
 
 let g:ycm_always_populate_location_list = 1
+
+set t_Co=256
