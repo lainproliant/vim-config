@@ -31,7 +31,8 @@ map [c <c-p>
 
 " Syntax highlighting settings.
 syntax on
-colorscheme ekvoli
+"colorscheme ekvoli
+colorscheme brookstream
 
 " Aliases for re-orientation of split windows.
 command Horizontal   :windo wincmd K
