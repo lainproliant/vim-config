@@ -19,3 +19,6 @@
 [submodule "bundle/gotham"]
 	path = bundle/gotham
 	url = https://github.com/whatyouhide/vim-gotham
+[submodule "bundle/SyntaxRange"]
+	path = bundle/SyntaxRange
+	url = https://github.com/vim-scripts/SyntaxRange
