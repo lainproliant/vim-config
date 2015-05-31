@@ -1,5 +1,7 @@
 set cindent       " Enable C-style auto-indenting.
 set autoindent    " Copy indent from current line when starting a new line.
+set showmatch     " Show matching parenthesis and brackets and stuff.
+set lisp          " Autoindent mode for lisp/scheme.
 set expandtab     " Tab inserts a number of spaces instead of a tab character.
 set tabstop=3     " The width in spaces of a Tab.
 set shiftwidth=3  " Number of spaces used for each step of indention.
@@ -32,7 +34,7 @@ map [c <c-p>
 " Syntax highlighting settings.
 syntax on
 "colorscheme ekvoli
-colorscheme brookstream
+colorscheme inkpot
 
 " Aliases for re-orientation of split windows.
 command Horizontal   :windo wincmd K

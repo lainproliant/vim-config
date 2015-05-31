@@ -22,3 +22,6 @@
 [submodule "bundle/SyntaxRange"]
 	path = bundle/SyntaxRange
 	url = https://github.com/vim-scripts/SyntaxRange
+[submodule "bundle/rainbow"]
+	path = bundle/rainbow
+	url = https://github.com/kien/rainbow_parentheses.vim
