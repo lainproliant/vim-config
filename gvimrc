@@ -13,7 +13,8 @@ colorscheme ekvoli
 
 " These settings are valid for GVim on X11 using xft.
 " set guifont=Luxi\ Mono\ 11
-set guifont=Luxi\ Mono\ 18
+" set guifont=Luxi\ Mono\ 18
+set guifont=Aurulent\ Sans\ Mono\ 13
 
 set mousemodel=popup
 
