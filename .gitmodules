@@ -25,6 +25,6 @@
 [submodule "bundle/rainbow"]
 	path = bundle/rainbow
 	url = https://github.com/kien/rainbow_parentheses.vim
-[submodule "bundle/racket"]
-	path = bundle/racket
-	url = https://github.com/wlangstroth/vim-racket
+[submodule "bundle/vim-syntax-extra"]
+	path = bundle/vim-syntax-extra
+	url = https://github.com/justinmk/vim-syntax-extra
