@@ -21,6 +21,9 @@ set formatoptions+=r    " Automatically insert comment characters.
 set backspace=2         " Allow backspace to work fully in insert mode.
 set mouse=a             " Enable the mouse in all modes.
 
+" Always vertically center the current line.
+set scrolloff=999
+
 " Map Ctrl+<ijkl> to window/split navigation.
 map <c-j> <c-w>j
 map <c-k> <c-w>k
@@ -33,7 +36,7 @@ map [c <c-p>
 
 " Syntax highlighting settings.
 syntax on
-colorscheme ekvoli
+colorscheme candycode
 
 " Aliases for re-orientation of split windows.
 command Horizontal   :windo wincmd K

@@ -28,3 +28,6 @@
 [submodule "bundle/vim-syntax-extra"]
 	path = bundle/vim-syntax-extra
 	url = https://github.com/justinmk/vim-syntax-extra
+[submodule "bundle/RoleplayingVim"]
+	path = bundle/RoleplayingVim
+	url = https://github.com/yotama9/RoleplayingVim
