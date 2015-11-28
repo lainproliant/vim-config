@@ -63,5 +63,7 @@ syntax on
 filetype plugin indent on
 
 let g:ycm_always_populate_location_list = 1
+"let g:ycm_server_keep_logfiles = 1
+"let g:ycm_server_log_level = 'debug'
 
 set t_Co=256
