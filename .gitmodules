@@ -28,3 +28,6 @@
 [submodule "bundle/RoleplayingVim"]
 	path = bundle/RoleplayingVim
 	url = https://github.com/yotama9/RoleplayingVim
+[submodule "bundle/vim-choosewin"]
+	path = bundle/vim-choosewin
+	url = https://github.com/t9md/vim-choosewin

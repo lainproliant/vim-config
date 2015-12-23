@@ -67,3 +67,8 @@ let g:ycm_always_populate_location_list = 1
 "let g:ycm_server_log_level = 'debug'
 
 set t_Co=256
+
+" Map the changewin plugin to '-'.
+nmap - <Plug>(choosewin)
+let g:choosewin_overlay_enable = 1
+
