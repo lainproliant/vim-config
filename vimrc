@@ -11,6 +11,7 @@ set showmode      " Show the current editing mode at the bottom.
 set hlsearch      " Highlight matches of the current or previous search.
 set nocompatible  " Non-VI compatible mode.
 "set autochdir     " Change to the current directory of a file upon opening.
+set laststatus=2  " Allow airline to always appear.
 
 " These lines disable the creation of backup and swap files.
 set nobackup

@@ -28,3 +28,15 @@
 [submodule "bundle/RoleplayingVim"]
 	path = bundle/RoleplayingVim
 	url = https://github.com/yotama9/RoleplayingVim
+[submodule "bundle/Goyo"]
+	path = bundle/Goyo
+	url = https://github.com/junegunn/goyo.vim
+[submodule "bundle/quicklink"]
+	path = bundle/quicklink
+	url = https://github.com/christoomey/vim-quicklink
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = https://github.com/bling/vim-airline
