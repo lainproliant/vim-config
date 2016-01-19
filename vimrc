@@ -48,6 +48,7 @@ set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
 
 " Include special configs.
 source $HOME/.vim/netrw-settings.vim
+source $HOME/.vim/easymotion-settings.vim
 
 " Disable awesome beepy sounds.
 set noeb novb
