@@ -46,3 +46,6 @@
 [submodule "bundle/netrw"]
 	path = bundle/netrw
 	url = https://github.com/vim-scripts/netrw.vim
+[submodule "bundle/choosewin"]
+	path = bundle/choosewin
+	url = https://github.com/t9md/vim-choosewin
