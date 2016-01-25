@@ -49,3 +49,24 @@
 [submodule "bundle/choosewin"]
 	path = bundle/choosewin
 	url = https://github.com/t9md/vim-choosewin
+[submodule "bundle/vim-colors_duotones"]
+	path = bundle/vim-colors_duotones
+	url = https://github.com/atelierbram/vim-colors_duotones
+[submodule "bundle/vim-valloric-colorscheme"]
+	path = bundle/vim-valloric-colorscheme
+	url = https://github.com/Valloric/vim-valloric-colorscheme
+[submodule "bundle/colorsbox"]
+	path = bundle/colorsbox
+	url = https://github.com/mkarmona/colorsbox
+[submodule "bundle/Ubaryd"]
+	path = bundle/Ubaryd
+	url = https://github.com/Donearm/Ubaryd
+[submodule "bundle/VIvid.vim"]
+	path = bundle/VIvid.vim
+	url = https://github.com/DrowsySaturn/VIvid.vim
+[submodule "bundle/meta5"]
+	path = bundle/meta5
+	url = https://github.com/christophermca/meta5
+[submodule "bundle/hilal"]
+	path = bundle/hilal
+	url = https://github.com/kocakosm/hilal

@@ -35,9 +35,17 @@ map <c-h> <c-w>h
 map ]c <c-n>
 map [c <c-p>
 
-" Syntax highlighting settings.
+" Pathogen Initialization and stupid fixes
+execute pathogen#infect()
+filetype off
 syntax on
-colorscheme ekvoli
+filetype plugin indent on
+
+" Syntax highlighting settings.  Some of my favorite
+" colorschemes are listed here.
+syntax on
+colorscheme meta5
+"colorscheme ekvoli
 
 " Aliases for re-orientation of split windows.
 command Horizontal   :windo wincmd K
@@ -57,12 +65,6 @@ set noeb novb
 " vizardry creates Git submodules instead of messy
 " nested repositories.
 let g:VizardryGitMethod="submodule add"
-
-" Pathogen Initialization and stupid fixes
-execute pathogen#infect()
-filetype off
-syntax on
-filetype plugin indent on
 
 let g:ycm_always_populate_location_list = 1
 "let g:ycm_server_keep_logfiles = 1
