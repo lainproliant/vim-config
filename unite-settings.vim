@@ -3,3 +3,5 @@
 nnoremap <C-p> :Unite file_rec/async<cr>
 " CTLR+F to seach for content in files under the current directory.
 nnoremap <C-f> :Unite grep:.<cr>
+" CTRL+S to switch buffers.
+nnoremap <C-o> :Unite -quick-match buffer<cr>
