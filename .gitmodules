@@ -70,3 +70,9 @@
 [submodule "bundle/hilal"]
 	path = bundle/hilal
 	url = https://github.com/kocakosm/hilal
+[submodule "bundle/vimshell"]
+	path = bundle/vimshell
+	url = https://github.com/Shougo/vimshell.vim
+[submodule "bundle/vimproc"]
+	path = bundle/vimproc
+	url = https://github.com/Shougo/vimproc.vim
