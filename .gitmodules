@@ -79,6 +79,3 @@
 [submodule "bundle/unite.vim"]
 	path = bundle/unite.vim
 	url = https://github.com/Shougo/unite.vim
-[submodule "bundle/Neoman"]
-	path = bundle/Neoman
-	url = https://github.com/nhooyr/neoman.vim
