@@ -1,5 +1,6 @@
 set cindent       " Enable C-style auto-indenting.
 set autoindent    " Copy indent from current line when starting a new line.
+set smartindent   " Smart indentation.
 set showmatch     " Show matching parenthesis and brackets and stuff.
 set lisp          " Autoindent mode for lisp/scheme.
 set expandtab     " Tab inserts a number of spaces instead of a tab character.
@@ -10,8 +11,8 @@ set ruler         " Show the line and column number of the cursor position.
 set showmode      " Show the current editing mode at the bottom.
 set hlsearch      " Highlight matches of the current or previous search.
 set nocompatible  " Non-VI compatible mode.
-"set autochdir     " Change to the current directory of a file upon opening.
 set laststatus=2  " Allow airline to always appear.
+set nofoldenable  " Disable folding.
 
 " These lines disable the creation of backup and swap files.
 set nobackup
@@ -44,8 +45,8 @@ filetype plugin indent on
 " Syntax highlighting settings.  Some of my favorite
 " colorschemes are listed here.
 syntax on
-colorscheme meta5
-"colorscheme ekvoli
+"colorscheme meta5
+colorscheme ekvoli
 
 " Aliases for re-orientation of split windows.
 command Horizontal   :window wincmd K
