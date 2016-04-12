@@ -9,7 +9,6 @@ set shiftwidth=3  " Number of spaces used for each step of indention.
 set softtabstop=3 " The number of spaces inserted by Tab in insert mode.
 set ruler         " Show the line and column number of the cursor position.
 set showmode      " Show the current editing mode at the bottom.
-set hlsearch      " Highlight matches of the current or previous search.
 set nocompatible  " Non-VI compatible mode.
 set laststatus=2  " Allow airline to always appear.
 set nofoldenable  " Disable folding.
@@ -45,8 +44,8 @@ filetype plugin indent on
 " Syntax highlighting settings.  Some of my favorite
 " colorschemes are listed here.
 syntax on
-"colorscheme meta5
-colorscheme ekvoli
+colorscheme meta5
+"colorscheme ekvoli
 
 " Aliases for re-orientation of split windows.
 command Horizontal   :window wincmd K
