@@ -2,7 +2,6 @@ set cindent       " Enable C-style auto-indenting.
 set autoindent    " Copy indent from current line when starting a new line.
 set smartindent   " Smart indentation.
 set showmatch     " Show matching parenthesis and brackets and stuff.
-set lisp          " Autoindent mode for lisp/scheme.
 set expandtab     " Tab inserts a number of spaces instead of a tab character.
 set tabstop=3     " The width in spaces of a Tab.
 set shiftwidth=3  " Number of spaces used for each step of indention.
@@ -44,7 +43,9 @@ filetype plugin indent on
 " Syntax highlighting settings.  Some of my favorite
 " colorschemes are listed here.
 syntax on
-colorscheme meta5
+colorscheme FunForrest
+"colorscheme corporation
+"colorscheme meta5
 "colorscheme ekvoli
 
 " Aliases for re-orientation of split windows.
@@ -54,26 +55,16 @@ command Term         :ConqueTerm bash
 
 set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
 
-" Include special configs.
-source $HOME/.vim/netrw-settings.vim
+" Include plugin-specific configs
+source $HOME/.vim/choosewin-settings.vim
+source $HOME/.vim/colorizer-settings.vim
 source $HOME/.vim/easymotion-settings.vim
+source $HOME/.vim/netrw-settings.vim
 source $HOME/.vim/unite-settings.vim
+source $HOME/.vim/vizardry-settings.vim
+source $HOME/.vim/ycm-settings.vim
 
 " Disable awesome beepy sounds.
 set noeb novb
 
-" Set vizardry git method to 'submodule add' so that
-" vizardry creates Git submodules instead of messy
-" nested repositories.
-let g:VizardryGitMethod="submodule add"
-
-let g:ycm_always_populate_location_list = 1
-"let g:ycm_server_keep_logfiles = 1
-"let g:ycm_server_log_level = 'debug'
-
 set t_Co=256
-
-" Map the changewin plugin to '-'.
-nmap - <Plug>(choosewin)
-let g:choosewin_overlay_enable = 1
-
