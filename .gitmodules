@@ -79,3 +79,6 @@
 [submodule "bundle/unite.vim"]
 	path = bundle/unite.vim
 	url = https://github.com/Shougo/unite.vim
+[submodule "bundle/vim-themes"]
+	path = bundle/vim-themes
+	url = https://github.com/mswift42/vim-themes
