@@ -22,7 +22,7 @@ set backspace=2         " Allow backspace to work fully in insert mode.
 set mouse=a             " Enable the mouse in all modes.
 
 " Always vertically center the current line.
-set scrolloff=999
+"set scrolloff=999
 
 " Map Ctrl+<ijkl> to window/split navigation.
 map <c-j> <c-w>j
@@ -43,10 +43,10 @@ filetype plugin indent on
 " Syntax highlighting settings.  Some of my favorite
 " colorschemes are listed here.
 syntax on
-colorscheme FunForrest
+"colorscheme FunForrest
 "colorscheme corporation
 "colorscheme meta5
-"colorscheme ekvoli
+colorscheme ekvoli
 
 " Aliases for re-orientation of split windows.
 command Horizontal   :windo wincmd K

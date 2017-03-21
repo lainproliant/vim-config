@@ -82,3 +82,9 @@
 [submodule "bundle/vim-themes"]
 	path = bundle/vim-themes
 	url = https://github.com/mswift42/vim-themes
+[submodule "bundle/mako"]
+	path = bundle/mako
+	url = https://github.com/sophacles/vim-bundle-mako
+[submodule "bundle/AnsiEsc"]
+	path = bundle/AnsiEsc
+	url = https://github.com/vim-scripts/AnsiEsc.vim
