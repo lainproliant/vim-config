@@ -85,3 +85,6 @@
 [submodule "bundle/AnsiEsc"]
 	path = bundle/AnsiEsc
 	url = https://github.com/vim-scripts/AnsiEsc.vim
+[submodule "bundle/Base2Tone-vim"]
+	path = bundle/Base2Tone-vim
+	url = https://github.com/atelierbram/Base2Tone-vim
