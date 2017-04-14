@@ -49,9 +49,6 @@
 [submodule "bundle/choosewin"]
 	path = bundle/choosewin
 	url = https://github.com/t9md/vim-choosewin
-[submodule "bundle/vim-colors_duotones"]
-	path = bundle/vim-colors_duotones
-	url = https://github.com/atelierbram/vim-colors_duotones
 [submodule "bundle/vim-valloric-colorscheme"]
 	path = bundle/vim-valloric-colorscheme
 	url = https://github.com/Valloric/vim-valloric-colorscheme
