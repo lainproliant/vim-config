@@ -58,9 +58,6 @@
 [submodule "bundle/Ubaryd"]
 	path = bundle/Ubaryd
 	url = https://github.com/Donearm/Ubaryd
-[submodule "bundle/VIvid.vim"]
-	path = bundle/VIvid.vim
-	url = https://github.com/DrowsySaturn/VIvid.vim
 [submodule "bundle/meta5"]
 	path = bundle/meta5
 	url = https://github.com/christophermca/meta5
