@@ -11,6 +11,7 @@ set showmode      " Show the current editing mode at the bottom.
 set nocompatible  " Non-VI compatible mode.
 set laststatus=2  " Allow airline to always appear.
 set nofoldenable  " Disable folding.
+set termguicolors " Use gui colors in the terminal
 
 " These lines disable the creation of backup and swap files.
 set nobackup
@@ -42,11 +43,7 @@ filetype plugin indent on
 
 " Syntax highlighting settings.  Some of my favorite
 " colorschemes are listed here.
-syntax on
-"colorscheme FunForrest
-"colorscheme corporation
-"colorscheme meta5
-colorscheme ekvoli
+colorscheme ekvoli-green
 
 " Aliases for re-orientation of split windows.
 command Horizontal   :windo wincmd K

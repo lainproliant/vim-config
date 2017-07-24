@@ -5,13 +5,6 @@
 " License: Vim License
 " Revision: 29
 
-if !has("gui_running") && &t_Co != 256 && &t_Co != 88
-	echomsg ""
-	echomsg "err: please use GUI or a 256-color terminal or 88-color terminal"
-	echomsg ""
-	finish
-endif
-
 if &background == "light"
 	set background=dark
 endif
