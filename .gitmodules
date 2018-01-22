@@ -10,9 +10,6 @@
 [submodule "bundle/YouCompleteMe"]
 	path = bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe
-[submodule "bundle/CSApprox"]
-	path = bundle/CSApprox
-	url = https://github.com/godlygeek/csapprox
 [submodule "bundle/gotham"]
 	path = bundle/gotham
 	url = https://github.com/whatyouhide/vim-gotham
@@ -85,3 +82,9 @@
 [submodule "bundle/Base2Tone-vim"]
 	path = bundle/Base2Tone-vim
 	url = https://github.com/atelierbram/Base2Tone-vim
+[submodule "bundle/CSApprox"]
+	path = bundle/CSApprox
+	url = https://github.com/godlygeek/csapprox
+[submodule "bundle/Seiya"]
+	path = bundle/Seiya
+	url = https://github.com/miyakogi/seiya.vim

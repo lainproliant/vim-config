@@ -11,7 +11,10 @@ set showmode      " Show the current editing mode at the bottom.
 set nocompatible  " Non-VI compatible mode.
 set laststatus=2  " Allow airline to always appear.
 set nofoldenable  " Disable folding.
-set termguicolors " Use gui colors in the terminal
+"set termguicolors " Use gui colors in the terminal
+
+" C/C++ indent options
+set cino=g0,+0,(0,j1,:0,N-s,i0,W4,m1
 
 " These lines disable the creation of backup and swap files.
 set nobackup
@@ -41,17 +44,6 @@ filetype off
 syntax on
 filetype plugin indent on
 
-" Syntax highlighting settings.  Some of my favorite
-" colorschemes are listed here.
-colorscheme ekvoli-green
-
-" Aliases for re-orientation of split windows.
-command Horizontal   :windo wincmd K
-command Vertical     :windo wincmd H
-command Term         :ConqueTerm bash
-
-set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
-
 " Include plugin-specific configs
 source $HOME/.vim/choosewin-settings.vim
 source $HOME/.vim/colorizer-settings.vim
@@ -60,6 +52,19 @@ source $HOME/.vim/netrw-settings.vim
 source $HOME/.vim/unite-settings.vim
 source $HOME/.vim/vizardry-settings.vim
 source $HOME/.vim/ycm-settings.vim
+source $HOME/.vim/seiya-settings.vim
+
+" Syntax highlighting settings.  Some of my favorite
+" colorschemes are listed here.
+colorscheme ekvoli
+
+" Aliases for re-orientation of split windows.
+command Horizontal   :windo wincmd K
+command Vertical     :windo wincmd H
+command Term         :ConqueTerm bash
+
+set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
+
 
 " Disable awesome beepy sounds.
 set noeb novb
