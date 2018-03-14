@@ -51,7 +51,6 @@ source $HOME/.vim/easymotion-settings.vim
 source $HOME/.vim/netrw-settings.vim
 source $HOME/.vim/unite-settings.vim
 source $HOME/.vim/vizardry-settings.vim
-source $HOME/.vim/ycm-settings.vim
 source $HOME/.vim/seiya-settings.vim
 
 " Syntax highlighting settings.  Some of my favorite
