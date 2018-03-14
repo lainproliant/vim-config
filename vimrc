@@ -25,6 +25,9 @@ set formatoptions+=r    " Automatically insert comment characters.
 set backspace=2         " Allow backspace to work fully in insert mode.
 set mouse=a             " Enable the mouse in all modes.
 
+" Auto-completion options
+set completeopt=longest,menuone
+
 " Always vertically center the current line.
 "set scrolloff=999
 
@@ -37,6 +40,9 @@ map <c-h> <c-w>h
 " Map Ctrl+n to next diff and Ctrl+p to prev diff.
 map ]c <c-n>
 map [c <c-p>
+
+" Enable python3 neovim module for vim8
+pythonx import neovim
 
 " Pathogen Initialization and stupid fixes
 execute pathogen#infect()
@@ -52,6 +58,8 @@ source $HOME/.vim/netrw-settings.vim
 source $HOME/.vim/unite-settings.vim
 source $HOME/.vim/vizardry-settings.vim
 source $HOME/.vim/seiya-settings.vim
+source $HOME/.vim/deoplete-settings.vim
+source $HOME/.vim/clang_complete-settings.vim
 
 " Syntax highlighting settings.  Some of my favorite
 " colorschemes are listed here.
@@ -63,7 +71,6 @@ command Vertical     :windo wincmd H
 command Term         :ConqueTerm bash
 
 set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
-
 
 " Disable awesome beepy sounds.
 set noeb novb
