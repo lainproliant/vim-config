@@ -1,3 +1,12 @@
+set nocompatible  " Non-VI compatible mode.
+filetype off
+
+set rtp+=~/.vim/Vundle.vim
+call vundle#begin()
+source $HOME/.vim/plugins.vim
+call vundle#end()
+filetype plugin indent on
+
 set cindent       " Enable C-style auto-indenting.
 set autoindent    " Copy indent from current line when starting a new line.
 set smartindent   " Smart indentation.
@@ -8,7 +17,6 @@ set shiftwidth=3  " Number of spaces used for each step of indention.
 set softtabstop=3 " The number of spaces inserted by Tab in insert mode.
 set ruler         " Show the line and column number of the cursor position.
 set showmode      " Show the current editing mode at the bottom.
-set nocompatible  " Non-VI compatible mode.
 set laststatus=2  " Allow airline to always appear.
 set nofoldenable  " Disable folding.
 "set termguicolors " Use gui colors in the terminal
@@ -46,7 +54,6 @@ pythonx import neovim
 
 " Pathogen Initialization and stupid fixes
 execute pathogen#infect()
-filetype off
 syntax on
 filetype plugin indent on
 
