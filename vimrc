@@ -19,7 +19,7 @@ set ruler         " Show the line and column number of the cursor position.
 set showmode      " Show the current editing mode at the bottom.
 set laststatus=2  " Allow airline to always appear.
 set nofoldenable  " Disable folding.
-"set termguicolors " Use gui colors in the terminal
+set termguicolors " Use gui colors in the terminal
 
 " C/C++ indent options
 set cino=g0,+0,(0,j1,:0,N-s,i0,W4,m1

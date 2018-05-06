@@ -9,4 +9,4 @@ Plugin 'easymotion/vim-easymotion'     " Quickly move to areas in a buffer using
 Plugin 'vim-scripts/netrw.vim'         " Latest available version of netrw directory management
 Plugin 't9md/vim-choosewin'            " Quickly switch between buffers by letter
 Plugin 'Valloric/YouCompleteMe'        " Syntax and code completion for C/C++ and more
-
+Plugin 'enricobacis/vim-airline-clock' " A clock for vim-airline, powered by Vim8 timers
