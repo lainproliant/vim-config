@@ -29,8 +29,8 @@ endif
 
 let g:colors_name =  "auburn"
 
-hi Normal            guifg=#FFC000 guibg=black
-hi NonText           guifg=#403000 guibg=black
+hi Normal            guifg=#FFC000 guibg=NONE
+hi NonText           guifg=#403000 guibg=NONE
 
 hi Cursor            guifg=black guibg=#FFC000 gui=bold
 hi CursorLine        guifg=#806000 guibg=#403000

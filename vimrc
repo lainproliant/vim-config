@@ -1,12 +1,5 @@
 set nocompatible  " Non-VI compatible mode.
 filetype off
-
-set rtp+=~/.vim/Vundle.vim
-call vundle#begin()
-source $HOME/.vim/plugins.vim
-call vundle#end()
-filetype plugin indent on
-
 set cindent       " Enable C-style auto-indenting.
 set autoindent    " Copy indent from current line when starting a new line.
 set smartindent   " Smart indentation.
@@ -20,6 +13,9 @@ set showmode      " Show the current editing mode at the bottom.
 set laststatus=2  " Allow airline to always appear.
 set nofoldenable  " Disable folding.
 set termguicolors " Use gui colors in the terminal
+
+" Load user plugins
+source $HOME/.vim/plugins.vim
 
 " C/C++ indent options
 set cino=g0,+0,(0,j1,:0,N-s,i0,W4,m1
@@ -52,25 +48,21 @@ map [c <c-p>
 " Enable python3 neovim module for vim8
 pythonx import neovim
 
-" Pathogen Initialization and stupid fixes
-execute pathogen#infect()
-syntax on
-filetype plugin indent on
-
 " Include plugin-specific configs
 source $HOME/.vim/choosewin-settings.vim
 source $HOME/.vim/colorizer-settings.vim
 source $HOME/.vim/easymotion-settings.vim
 source $HOME/.vim/netrw-settings.vim
-source $HOME/.vim/unite-settings.vim
-source $HOME/.vim/vizardry-settings.vim
 source $HOME/.vim/seiya-settings.vim
-source $HOME/.vim/deoplete-settings.vim
-source $HOME/.vim/clang_complete-settings.vim
+source $HOME/.vim/ycm-settings.vim
 
 " Syntax highlighting settings.  Some of my favorite
 " colorschemes are listed here.
-colorscheme ekvoli
+colorscheme ekvoli-red
+
+" Make the gutter have no background color.
+hi SignColumn guibg=NONE
+hi Normal guibg=NONE ctermbg=NONE
 
 " Aliases for re-orientation of split windows.
 command Horizontal   :windo wincmd K

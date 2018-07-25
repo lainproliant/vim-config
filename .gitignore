@@ -3,3 +3,4 @@ bundle
 plugin/clang
 plugin/kinds.pyc
 plugin/snippets
+user-plugs
