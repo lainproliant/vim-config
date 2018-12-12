@@ -1,18 +1,28 @@
-set nocompatible  " Non-VI compatible mode.
+set nocompatible     " Non-VI compatible mode.
 filetype off
-set cindent       " Enable C-style auto-indenting.
-set autoindent    " Copy indent from current line when starting a new line.
-set smartindent   " Smart indentation.
-set showmatch     " Show matching parenthesis and brackets and stuff.
-set expandtab     " Tab inserts a number of spaces instead of a tab character.
-set tabstop=3     " The width in spaces of a Tab.
-set shiftwidth=3  " Number of spaces used for each step of indention.
-set softtabstop=3 " The number of spaces inserted by Tab in insert mode.
-set ruler         " Show the line and column number of the cursor position.
-set showmode      " Show the current editing mode at the bottom.
-set laststatus=2  " Allow airline to always appear.
-set nofoldenable  " Disable folding.
-set termguicolors " Use gui colors in the terminal
+set cindent          " Enable C-style auto-indenting.
+set autoindent       " Copy indent from current line when starting a new line.
+set smartindent      " Smart indentation.
+set showmatch        " Show matching parenthesis and brackets and stuff.
+set expandtab        " Tab inserts a number of spaces instead of a tab character.
+set tabstop=3        " The width in spaces of a Tab.
+set shiftwidth=3     " Number of spaces used for each step of indention.
+set softtabstop=3    " The number of spaces inserted by Tab in insert mode.
+set ruler            " Show the line and column number of the cursor position.
+set showmode         " Show the current editing mode at the bottom.
+set laststatus=2     " Allow airline to always appear.
+set nofoldenable     " Disable folding.
+set termguicolors    " Use gui colors in the terminal
+set colorcolumn=80   " peppy
+set splitbelow
+set splitright
+
+" Enable folding
+set foldmethod=indent
+set foldlevel=99
+
+" Enable folding with the spacebar
+nnoremap <space> za
 
 " Load user plugins
 source $HOME/.vim/plugins.vim
@@ -48,26 +58,20 @@ map [c <c-p>
 " Enable python3 neovim module for vim8
 pythonx import neovim
 
-" Include plugin-specific configs
-source $HOME/.vim/choosewin-settings.vim
-source $HOME/.vim/colorizer-settings.vim
-source $HOME/.vim/easymotion-settings.vim
-source $HOME/.vim/netrw-settings.vim
-source $HOME/.vim/seiya-settings.vim
-source $HOME/.vim/ycm-settings.vim
+" Syntax highlighting settings.
+colorscheme twilight
+"colorscheme corporation
+""colorscheme refactor
 
-" Syntax highlighting settings.  Some of my favorite
-" colorschemes are listed here.
-colorscheme ekvoli-red
 
 " Make the gutter have no background color.
 hi SignColumn guibg=NONE
-hi Normal guibg=NONE ctermbg=NONE
+hi Normal guibg=NONE ctermbg=000000
 
 " Aliases for re-orientation of split windows.
 command Horizontal   :windo wincmd K
 command Vertical     :windo wincmd H
-command Term         :ConqueTerm bash
+command Term         :term ++curwin
 
 set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
 
@@ -81,3 +85,39 @@ if &term =~ '256color'
 endif
 
 set t_Co=256
+
+" --------- Options for GVim ---------
+" Remove all menus, toolbars, and status bars.
+set guioptions-=m
+set guioptions-=T
+set guioptions-=r
+set guioptions-=L
+
+set guifont=Courier\ Prime\ Code\ 13
+
+set mousemodel=popup
+
+" Block out annoying middle-mouse clicks from pasting
+" links or whatever else is in the clipboard.
+" This is necessary if you are using a touchpad with
+" middle click, otherwise don't worry about it.
+:map <MiddleMouse> <Nop>
+:imap <MiddleMouse> <Nop>
+
+" Makes a split `<Ctrl-w>s` in a terminal buffer spawn a new terminal.
+autocmd BufWinEnter,WinEnter term://* nnoremap <buffer> <C-w>s <C-\><C-n><C-w><C-v> :terminal <CR>
+
+"Include plugin-specific configs
+source $HOME/.vim/black-settings.vim
+source $HOME/.vim/calendar-settings.vim
+source $HOME/.vim/choosewin-settings.vim
+source $HOME/.vim/colorizer-settings.vim
+source $HOME/.vim/ctrlp-settings.vim
+source $HOME/.vim/easymotion-settings.vim
+source $HOME/.vim/netrw-settings.vim
+source $HOME/.vim/seiya-settings.vim
+source $HOME/.vim/syntastic-settings.vim
+source $HOME/.vim/tagbar-settings.vim
+source $HOME/.vim/vimwiki-settings.vim
+source $HOME/.vim/ycm-settings.vim
+
