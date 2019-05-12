@@ -13,7 +13,6 @@ set showmode         " Show the current editing mode at the bottom.
 set laststatus=2     " Allow airline to always appear.
 set nofoldenable     " Disable folding.
 set termguicolors    " Use gui colors in the terminal
-set colorcolumn=80   " peppy
 set splitbelow
 set splitright
 
@@ -54,6 +53,9 @@ map <c-h> <c-w>h
 " Map Ctrl+n to next diff and Ctrl+p to prev diff.
 map ]c <c-n>
 map [c <c-p>
+
+" Setup \q to close a buffer without closing the window.
+map <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
 
 " Enable python3 neovim module for vim8
 pythonx import neovim
@@ -108,6 +110,7 @@ set mousemodel=popup
 autocmd BufWinEnter,WinEnter term://* nnoremap <buffer> <C-w>s <C-\><C-n><C-w><C-v> :terminal <CR>
 
 "Include plugin-specific configs
+source $HOME/.vim/ale-settings.vim
 source $HOME/.vim/black-settings.vim
 source $HOME/.vim/calendar-settings.vim
 source $HOME/.vim/choosewin-settings.vim
@@ -116,7 +119,6 @@ source $HOME/.vim/ctrlp-settings.vim
 source $HOME/.vim/easymotion-settings.vim
 source $HOME/.vim/netrw-settings.vim
 source $HOME/.vim/seiya-settings.vim
-source $HOME/.vim/syntastic-settings.vim
 source $HOME/.vim/tagbar-settings.vim
 source $HOME/.vim/vimwiki-settings.vim
 source $HOME/.vim/ycm-settings.vim

@@ -19,7 +19,6 @@ Plug 'nixprime/cpsm', { 'do': './install.sh' } " Context aware find helper for c
 Plug 'nvie/vim-flake8'                 " Flake8 integration
 Plug 'plasticboy/vim-markdown'         " Vim Markdown mode
 Plug 'powerman/vim-plugin-AnsiEsc'     " Color support in taskwiki charts
-Plug 'python/black'                    " The uncompromising python formatter.
 Plug 'scottymoon/vim-twilight'         " twilight colorscheme
 Plug 'sheerun/vim-polyglot'            " Syntax highlighting for lots of languages
 Plug 't9md/vim-choosewin'              " Quickly switch between buffers by letter
@@ -36,8 +35,9 @@ Plug 'vim-scripts/ScrollColors'        " Scroll through availale color schemes
 Plug 'vim-scripts/SyntaxRange'         " Define a different filetype syntax on regions in a buffer
 Plug 'vim-scripts/indentpython.vim'    " Special indentation for Python
 Plug 'vim-scripts/netrw.vim'           " Latest available version of netrw directory management
-Plug 'vim-syntastic/syntastic'         " Syntax checking hacks for Vim.
 Plug 'vimwiki/vimwiki'                 " Organize notes nicely
 Plug 'whatyouhide/vim-gotham'          " Color scheme
+Plug 'w0rp/ale'                        " Trying an alternative to syntastic
+Plug 'wincent/ferret'                  " The ferret searcher
 
 call plug#end()
