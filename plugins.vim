@@ -7,7 +7,6 @@ Plug 'craigemery/vim-autotag'          " Automatically update ctags on save.
 Plug 'ctrlpvim/ctrlp.vim'              " Fuzzy find files.
 Plug 'easymotion/vim-easymotion'       " Quickly move to areas in a buffer using alphabetic hints
 Plug 'enricobacis/vim-airline-clock'   " A clock for vim-airline, powered by Vim8 timers
-Plug 'farseer90718/vim-taskwarrior'    " Taskwarrior grid view
 Plug 'itchyny/calendar.vim'            " Vim-TUI interface to Google Calendar
 Plug 'jiangmiao/auto-pairs'            " Automatically close pairs.
 Plug 'junegunn/goyo.vim'               " Cleanroom for writing, use :Goyo
