@@ -61,14 +61,14 @@ map <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
 pythonx import neovim
 
 " Syntax highlighting settings.
-colorscheme twilight
+colorscheme gotham
 "colorscheme corporation
 ""colorscheme refactor
 
 
 " Make the gutter have no background color.
-hi SignColumn guibg=NONE
-hi Normal guibg=NONE ctermbg=000000
+""hi SignColumn guibg=NONE
+""hi Normal guibg=NONE ctermbg=000000
 
 " Aliases for re-orientation of split windows.
 command Horizontal   :windo wincmd K
@@ -110,8 +110,8 @@ set mousemodel=popup
 autocmd BufWinEnter,WinEnter term://* nnoremap <buffer> <C-w>s <C-\><C-n><C-w><C-v> :terminal <CR>
 
 "Include plugin-specific configs
+source $HOME/.vim/ack-settings.vim
 source $HOME/.vim/ale-settings.vim
-source $HOME/.vim/black-settings.vim
 source $HOME/.vim/calendar-settings.vim
 source $HOME/.vim/choosewin-settings.vim
 source $HOME/.vim/colorizer-settings.vim
