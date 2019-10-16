@@ -5,8 +5,8 @@ let g:ale_lint_delay=2000
 let g:ale_linters = {
       \  'typescript': ['tslint', 'tsserver', 'typecheck'],
       \  'javascript': ['jslint', 'tsserver'],
-      \  'cpp': ['clang'],
-      \  'c': ['clang']
+      \  'cpp': [],
+      \  'c': []
       \ }
 
 " --------------------------------------------------------------------------
@@ -21,4 +21,3 @@ if len(pylint_disable_flags)
   let g:ale_python_pylint_options = 
         \ ' --disable=' . join(pylint_disable_flags, ',')
 endif
-

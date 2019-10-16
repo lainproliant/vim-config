@@ -12,9 +12,12 @@ set ruler            " Show the line and column number of the cursor position.
 set showmode         " Show the current editing mode at the bottom.
 set laststatus=2     " Allow airline to always appear.
 set nofoldenable     " Disable folding.
-set termguicolors    " Use gui colors in the terminal
 set splitbelow
 set splitright
+
+if !exists('$TMUX')
+  set termguicolors    " Use gui colors in the terminal
+endif
 
 " Enable folding
 set foldmethod=indent
@@ -57,14 +60,14 @@ map [c <c-p>
 " Setup \q to close a buffer without closing the window.
 map <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
 
+" Setup \t to test the current file in PyTest
+map <leader>t :Pytest file<CR>
+
 " Enable python3 neovim module for vim8
 pythonx import neovim
 
 " Syntax highlighting settings.
-colorscheme gotham
-"colorscheme corporation
-""colorscheme refactor
-
+colorscheme substrata
 
 " Make the gutter have no background color.
 ""hi SignColumn guibg=NONE
@@ -109,9 +112,14 @@ set mousemodel=popup
 " Makes a split `<Ctrl-w>s` in a terminal buffer spawn a new terminal.
 autocmd BufWinEnter,WinEnter term://* nnoremap <buffer> <C-w>s <C-\><C-n><C-w><C-v> :terminal <CR>
 
-"Include plugin-specific configs
+" Let's edit this file!
+command! Vimrc :e ~/.vim/vimrc
+command! VimPlugins :e ~/.vim/plugins.vim
+command! VimrcReload :source ~/.vim/vimrc
+
+" Include plugin-specific configs
 source $HOME/.vim/ack-settings.vim
-source $HOME/.vim/ale-settings.vim
+"source $HOME/.vim/ale-settings.vim
 source $HOME/.vim/calendar-settings.vim
 source $HOME/.vim/choosewin-settings.vim
 source $HOME/.vim/colorizer-settings.vim
