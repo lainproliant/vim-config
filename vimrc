@@ -26,9 +26,6 @@ set foldlevel=99
 " Enable folding with the spacebar
 nnoremap <space> za
 
-" Load user plugins
-source $HOME/.vim/plugins.vim
-
 " C/C++ indent options
 set cino=g0,+0,(0,j1,:0,N-s,i0,W4,m1
 
@@ -65,9 +62,6 @@ map <leader>t :Pytest file<CR>
 
 " Enable python3 neovim module for vim8
 pythonx import neovim
-
-" Syntax highlighting settings.
-colorscheme substrata
 
 " Make the gutter have no background color.
 ""hi SignColumn guibg=NONE
@@ -117,17 +111,23 @@ command! Vimrc :e ~/.vim/vimrc
 command! VimPlugins :e ~/.vim/plugins.vim
 command! VimrcReload :source ~/.vim/vimrc
 
+" Load user plugins
+source $HOME/.vim/plugins.vim
+
 " Include plugin-specific configs
 source $HOME/.vim/ack-settings.vim
-"source $HOME/.vim/ale-settings.vim
 source $HOME/.vim/calendar-settings.vim
 source $HOME/.vim/choosewin-settings.vim
 source $HOME/.vim/colorizer-settings.vim
 source $HOME/.vim/ctrlp-settings.vim
 source $HOME/.vim/easymotion-settings.vim
+source $HOME/.vim/neomake-settings.vim
 source $HOME/.vim/netrw-settings.vim
 source $HOME/.vim/seiya-settings.vim
 source $HOME/.vim/tagbar-settings.vim
 source $HOME/.vim/vimwiki-settings.vim
 source $HOME/.vim/ycm-settings.vim
+
+" Syntax highlighting settings.
+colorscheme base16-greenscreen
 
