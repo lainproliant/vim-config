@@ -58,14 +58,14 @@ map [c <c-p>
 map <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
 
 " Setup \t to test the current file in PyTest
-map <leader>t :Pytest file<CR>
+" map <leader>t :Pytest file<CR>
 
 " Enable python3 neovim module for vim8
 pythonx import neovim
 
 " Make the gutter have no background color.
 ""hi SignColumn guibg=NONE
-""hi Normal guibg=NONE ctermbg=000000
+hi Normal guibg=NONE ctermbg=000000
 
 " Aliases for re-orientation of split windows.
 command Horizontal   :windo wincmd K
@@ -117,10 +117,13 @@ source $HOME/.vim/plugins.vim
 " Include plugin-specific configs
 source $HOME/.vim/ack-settings.vim
 source $HOME/.vim/calendar-settings.vim
+source $HOME/.vim/checkbox-settings.vim
 source $HOME/.vim/choosewin-settings.vim
 source $HOME/.vim/colorizer-settings.vim
 source $HOME/.vim/ctrlp-settings.vim
+source $HOME/.vim/gnupg-settings.vim
 source $HOME/.vim/easymotion-settings.vim
+source $HOME/.vim/mdnav-settings.vim
 source $HOME/.vim/neomake-settings.vim
 source $HOME/.vim/netrw-settings.vim
 source $HOME/.vim/seiya-settings.vim
@@ -131,3 +134,15 @@ source $HOME/.vim/ycm-settings.vim
 " Syntax highlighting settings.
 colorscheme base16-greenscreen
 
+" Save a file with date prepended
+function! DateSave(filename) range
+    let l:extension = '.' . fnamemodify( a:filename, ':e' )
+    if len(l:extension) == 1
+        let l:extension = '.md'
+    endif
+
+    let l:filename = escape( fnamemodify(a:filename, ':r') . strftime("-%Y-%m-%d") . l:extension, ' ' )
+
+    execute "write " . l:filename
+endfunction
+command! -nargs=1 DS call DateSave( <q-args> )

@@ -5,6 +5,7 @@ Plug 'ambv/black'                      " Python black integration.
 Plug 'arcticicestudio/nord-vim'        " Nordic ice colorscheme
 Plug 'arzg/vim-substrata'              " A cold dark colorscheme.
 Plug 'chase/focuspoint-vim'            " focuspoint colorscheme
+Plug 'chmp/mdnav'                      " Markdown link navigation.
 Plug 'cocopon/iceberg.vim'             " Keep those colorschemes coming...
 Plug 'craigemery/vim-autotag'          " Automatically update ctags on save.
 Plug 'ctrlpvim/ctrlp.vim'              " Fuzzy find files.
@@ -14,8 +15,10 @@ Plug 'enricobacis/vim-airline-clock'   " A clock for vim-airline, powered by Vim
 Plug 'fisadev/vim-isort'               " Adds the :Isort command to sort python imports.
 Plug 'hauleth/blame.vim'               " Another good color scheme.
 Plug 'itchyny/calendar.vim'            " Vim-TUI interface to Google Calendar
+Plug 'jamessan/vim-gnupg'              " gpg encryption integration
 Plug 'jiangmiao/auto-pairs'            " Automatically close pairs.
 Plug 'jimzhan/vim-colors'              " Base16 colorschemes
+Plug 'jkramer/vim-checkbox'            " Nice mappings for checkbox toggle.
 Plug 'junegunn/goyo.vim'               " Cleanroom for writing, use :Goyo
 Plug 'justinmk/vim-syntax-extra'       " Vim syntax highlighting for c, bison, flex
 Plug 'leafgarland/typescript-vim'      " Typescript support
@@ -27,6 +30,8 @@ Plug 'nixprime/cpsm', { 'do': './install.sh' } " Context aware find helper for c
 Plug 'nvie/vim-flake8'                 " Flake8 integration
 Plug 'pangloss/vim-javascript'         " Vim indentation
 Plug 'plasticboy/vim-markdown'         " Vim Markdown mode
+Plug 'rbong/vim-flog'                  " Graphical branch viewer
+Plug 'rhysd/vim-clang-format'          " Format C family code automatically
 Plug 'Rigellute/shades-of-purple.vim'  " A purple theme
 Plug 'rking/ag.vim'                    " Replace ferret, because it defines :Black and conflitcs with black
 Plug 'scottymoon/vim-twilight'         " twilight colorscheme

@@ -6,6 +6,16 @@
 call neomake#configure#automake('nrwi', 1000)
 
 " --------------------------------------------------------------------------
+"  C Linter Options
+" --------------------------------------------------------------------------
+let g:neomake_c_enabled_makers = []
+
+" --------------------------------------------------------------------------
+"  C++ Linter Options
+" --------------------------------------------------------------------------
+let g:neomake_cpp_enabled_makers = []
+
+" --------------------------------------------------------------------------
 "  Python Linter Options
 " --------------------------------------------------------------------------
 let pylint_ignore = []
@@ -22,7 +32,7 @@ call add(pylint_ignore, 'W')     " Disable all warnings.
 let flake8_ignore = []
 call add(flake8_ignore, 'E501')  " Line too long.
 
-let g:neomake_python_enable_makers = ['flake8', 'pylint', 'mypy', 'isort']
+let g:neomake_python_enabled_makers = ['flake8', 'pylint', 'mypy']
 let g:neomake_python_pylint_maker = {
       \ 'args': ['--disable=' . join(pylint_ignore, ', '),]
       \ }
