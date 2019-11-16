@@ -17,7 +17,6 @@ Plug 'hauleth/blame.vim'               " Another good color scheme.
 Plug 'itchyny/calendar.vim'            " Vim-TUI interface to Google Calendar
 Plug 'jamessan/vim-gnupg'              " gpg encryption integration
 Plug 'jiangmiao/auto-pairs'            " Automatically close pairs.
-Plug 'jimzhan/vim-colors'              " Base16 colorschemes
 Plug 'jkramer/vim-checkbox'            " Nice mappings for checkbox toggle.
 Plug 'junegunn/goyo.vim'               " Cleanroom for writing, use :Goyo
 Plug 'justinmk/vim-syntax-extra'       " Vim syntax highlighting for c, bison, flex

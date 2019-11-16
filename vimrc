@@ -12,12 +12,14 @@ set ruler            " Show the line and column number of the cursor position.
 set showmode         " Show the current editing mode at the bottom.
 set laststatus=2     " Allow airline to always appear.
 set nofoldenable     " Disable folding.
+set autoread
 set splitbelow
 set splitright
 
-if !exists('$TMUX')
-  set termguicolors    " Use gui colors in the terminal
-endif
+" This supposedly fixes termguicolors in tmux.
+"let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+"let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+set termguicolors    " Use gui colors in the terminal
 
 " Enable folding
 set foldmethod=indent
@@ -62,10 +64,6 @@ map <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
 
 " Enable python3 neovim module for vim8
 pythonx import neovim
-
-" Make the gutter have no background color.
-""hi SignColumn guibg=NONE
-hi Normal guibg=NONE ctermbg=000000
 
 " Aliases for re-orientation of split windows.
 command Horizontal   :windo wincmd K
@@ -130,9 +128,15 @@ source $HOME/.vim/seiya-settings.vim
 source $HOME/.vim/tagbar-settings.vim
 source $HOME/.vim/vimwiki-settings.vim
 source $HOME/.vim/ycm-settings.vim
+source $HOME/.vim/base16.vim
 
-" Syntax highlighting settings.
-colorscheme base16-greenscreen
+
+" Make the gutter have no background color.
+""hi SignColumn guibg=NONE
+hi Normal guibg=NONE ctermbg=000000
+
+" Set guifont for gvim
+set guifont=Iosevka\ Nerd\ Font\ 14
 
 " Save a file with date prepended
 function! DateSave(filename) range
