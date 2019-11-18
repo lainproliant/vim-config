@@ -112,15 +112,17 @@ command! VimrcReload :source ~/.vim/vimrc
 " Load user plugins
 source $HOME/.vim/plugins.vim
 
-" Include plugin-specific configs
+" Include context-specific configs.
 source $HOME/.vim/ack-settings.vim
+source $HOME/.vim/base16.vim
 source $HOME/.vim/calendar-settings.vim
 source $HOME/.vim/checkbox-settings.vim
 source $HOME/.vim/choosewin-settings.vim
 source $HOME/.vim/colorizer-settings.vim
 source $HOME/.vim/ctrlp-settings.vim
-source $HOME/.vim/gnupg-settings.vim
 source $HOME/.vim/easymotion-settings.vim
+source $HOME/.vim/gnupg-settings.vim
+source $HOME/.vim/insert-macros.vim
 source $HOME/.vim/mdnav-settings.vim
 source $HOME/.vim/neomake-settings.vim
 source $HOME/.vim/netrw-settings.vim
@@ -128,8 +130,6 @@ source $HOME/.vim/seiya-settings.vim
 source $HOME/.vim/tagbar-settings.vim
 source $HOME/.vim/vimwiki-settings.vim
 source $HOME/.vim/ycm-settings.vim
-source $HOME/.vim/base16.vim
-
 
 " Make the gutter have no background color.
 ""hi SignColumn guibg=NONE

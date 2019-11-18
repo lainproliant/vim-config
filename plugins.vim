@@ -5,7 +5,6 @@ Plug 'ambv/black'                      " Python black integration.
 Plug 'arcticicestudio/nord-vim'        " Nordic ice colorscheme
 Plug 'arzg/vim-substrata'              " A cold dark colorscheme.
 Plug 'chase/focuspoint-vim'            " focuspoint colorscheme
-Plug 'chmp/mdnav'                      " Markdown link navigation.
 Plug 'cocopon/iceberg.vim'             " Keep those colorschemes coming...
 Plug 'craigemery/vim-autotag'          " Automatically update ctags on save.
 Plug 'ctrlpvim/ctrlp.vim'              " Fuzzy find files.
@@ -29,6 +28,7 @@ Plug 'nixprime/cpsm', { 'do': './install.sh' } " Context aware find helper for c
 Plug 'nvie/vim-flake8'                 " Flake8 integration
 Plug 'pangloss/vim-javascript'         " Vim indentation
 Plug 'plasticboy/vim-markdown'         " Vim Markdown mode
+Plug 'prashanthellina/follow-markdown-links'
 Plug 'rbong/vim-flog'                  " Graphical branch viewer
 Plug 'rhysd/vim-clang-format'          " Format C family code automatically
 Plug 'Rigellute/shades-of-purple.vim'  " A purple theme
