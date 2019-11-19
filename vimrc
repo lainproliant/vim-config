@@ -123,6 +123,7 @@ source $HOME/.vim/ctrlp-settings.vim
 source $HOME/.vim/easymotion-settings.vim
 source $HOME/.vim/gnupg-settings.vim
 source $HOME/.vim/insert-macros.vim
+source $HOME/.vim/markdown-settings.vim
 source $HOME/.vim/mdnav-settings.vim
 source $HOME/.vim/neomake-settings.vim
 source $HOME/.vim/netrw-settings.vim

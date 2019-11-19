@@ -13,6 +13,7 @@ Plug 'easymotion/vim-easymotion'       " Quickly move to areas in a buffer using
 Plug 'enricobacis/vim-airline-clock'   " A clock for vim-airline, powered by Vim8 timers
 Plug 'fisadev/vim-isort'               " Adds the :Isort command to sort python imports.
 Plug 'hauleth/blame.vim'               " Another good color scheme.
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' } " Newer markdown previewer.
 Plug 'itchyny/calendar.vim'            " Vim-TUI interface to Google Calendar
 Plug 'jamessan/vim-gnupg'              " gpg encryption integration
 Plug 'jiangmiao/auto-pairs'            " Automatically close pairs.
@@ -28,7 +29,6 @@ Plug 'nixprime/cpsm', { 'do': './install.sh' } " Context aware find helper for c
 Plug 'nvie/vim-flake8'                 " Flake8 integration
 Plug 'pangloss/vim-javascript'         " Vim indentation
 Plug 'plasticboy/vim-markdown'         " Vim Markdown mode
-Plug 'prashanthellina/follow-markdown-links'
 Plug 'rbong/vim-flog'                  " Graphical branch viewer
 Plug 'rhysd/vim-clang-format'          " Format C family code automatically
 Plug 'Rigellute/shades-of-purple.vim'  " A purple theme
@@ -47,9 +47,7 @@ Plug 'vim-airline/vim-airline'         " Lean status/tabline
 Plug 'vim-airline/vim-airline-themes'  " Themes for airline
 Plug 'vim-scripts/HTML-AutoCloseTag'   " Automatically close HTML tags.
 Plug 'vim-scripts/indentpython.vim'    " Special indentation for Python
-Plug 'vim-scripts/netrw.vim'           " Latest available version of netrw directory management
 Plug 'vim-scripts/ScrollColors'        " Scroll through availale color schemes
 Plug 'vim-scripts/SyntaxRange'         " Define a different filetype syntax on regions in a buffer
-Plug 'vimwiki/vimwiki'                 " Organize notes nicely
 Plug 'whatyouhide/vim-gotham'          " Color scheme
 call plug#end()
