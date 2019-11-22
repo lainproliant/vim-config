@@ -18,10 +18,10 @@ Plug 'itchyny/calendar.vim'            " Vim-TUI interface to Google Calendar
 Plug 'jamessan/vim-gnupg'              " gpg encryption integration
 Plug 'jiangmiao/auto-pairs'            " Automatically close pairs.
 Plug 'jkramer/vim-checkbox'            " Nice mappings for checkbox toggle.
+Plug 'jlanzarotta/bufexplorer'         " Easy manipulation of buffers.
 Plug 'junegunn/goyo.vim'               " Cleanroom for writing, use :Goyo
 Plug 'justinmk/vim-syntax-extra'       " Vim syntax highlighting for c, bison, flex
 Plug 'leafgarland/typescript-vim'      " Typescript support
-Plug 'majutsushi/tagbar'               " Taskwiki file navigation
 Plug 'majutsushi/tagbar'               " View file outline from ctags
 Plug 'manasthakur/vim-commentor'       " Automatically comment/uncomment
 Plug 'neomake/neomake'                 " Async syntax linter

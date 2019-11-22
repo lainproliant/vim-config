@@ -6,4 +6,5 @@ let g:ycm_extra_conf_globlist = ['~/proj/*','!~/*']
 let g:ycm_always_populate_location_list = 1
 
 let g:ycm_autoclose_preview_window_after_completion=1
-map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+nmap <leader>d  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+nmap <leader>r  :YcmCompleter GoToReferences<CR> 
