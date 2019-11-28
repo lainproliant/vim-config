@@ -2,7 +2,8 @@ call plug#begin('~/.vim/user-plugs')
 Plug 'abnt713/vim-hashpunk'            " hashpunk colorschemes
 Plug 'alfredodeza/pytest.vim'          " pytest integration for vim
 Plug 'ambv/black'                      " Python black integration.
-Plug 'arcticicestudio/nord-vim'        " Nordic ice colorscheme
+Plug 'aperezdc/vim-template'           " A VIM plugin for managing templates.
+Plug 'arcticicestudio/nord-vim'        " Nordic ice colorscheme.
 Plug 'arzg/vim-substrata'              " A cold dark colorscheme.
 Plug 'chase/focuspoint-vim'            " focuspoint colorscheme
 Plug 'cocopon/iceberg.vim'             " Keep those colorschemes coming...

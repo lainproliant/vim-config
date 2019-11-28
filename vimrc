@@ -15,11 +15,15 @@ set nofoldenable     " Disable folding.
 set autoread
 set splitbelow
 set splitright
+set autochdir        " automatically switch to the file's directory.
 
 " This supposedly fixes termguicolors in tmux.
 "let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 "let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 set termguicolors    " Use gui colors in the terminal
+
+" Automatically resize splits to equal size.
+autocmd VimResized * wincmd =
 
 " Enable folding
 set foldmethod=indent
@@ -113,24 +117,25 @@ command! VimrcReload :source ~/.vim/vimrc
 source $HOME/.vim/plugins.vim
 
 " Include context-specific configs.
-source $HOME/.vim/ack-settings.vim
+source $HOME/.vim/ack_settings.vim
 source $HOME/.vim/base16.vim
-source $HOME/.vim/calendar-settings.vim
-source $HOME/.vim/checkbox-settings.vim
-source $HOME/.vim/choosewin-settings.vim
-source $HOME/.vim/colorizer-settings.vim
-source $HOME/.vim/ctrlp-settings.vim
-source $HOME/.vim/easymotion-settings.vim
-source $HOME/.vim/gnupg-settings.vim
-source $HOME/.vim/insert-macros.vim
-source $HOME/.vim/markdown-settings.vim
-source $HOME/.vim/mdnav-settings.vim
-source $HOME/.vim/neomake-settings.vim
-source $HOME/.vim/netrw-settings.vim
-source $HOME/.vim/seiya-settings.vim
-source $HOME/.vim/tagbar-settings.vim
-source $HOME/.vim/vimwiki-settings.vim
-source $HOME/.vim/ycm-settings.vim
+source $HOME/.vim/calendar_settings.vim
+source $HOME/.vim/checkbox_settings.vim
+source $HOME/.vim/choosewin_settings.vim
+source $HOME/.vim/colorizer_settings.vim
+source $HOME/.vim/ctrlp_settings.vim
+source $HOME/.vim/easymotion_settings.vim
+source $HOME/.vim/gnupg_settings.vim
+source $HOME/.vim/insert_macros.vim
+source $HOME/.vim/markdown_settings.vim
+source $HOME/.vim/mdnav_settings.vim
+source $HOME/.vim/neomake_settings.vim
+source $HOME/.vim/netrw_settings.vim
+source $HOME/.vim/seiya_settings.vim
+source $HOME/.vim/tagbar_settings.vim
+source $HOME/.vim/template_settings.vim
+source $HOME/.vim/vimwiki_settings.vim
+source $HOME/.vim/ycm_settings.vim
 
 " Make the gutter have no background color.
 ""hi SignColumn guibg=NONE
