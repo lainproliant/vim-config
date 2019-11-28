@@ -1,13 +1,15 @@
 " --- vim-template settings ---
 let g:templates_fuzzy_start = 0
+let g:templates_no_builtin_templates=1
 let g:email="lain.proliant@gmail.com"
 let g:templates_directory="~/.vim/templates/"
 let g:username="Lain Musgrove"
+let g:license="MIT"
 
 let g:templates_user_variables = [
-  \ ['FORMALDATE', 'g:template_settings#formal_date()'],
-  \ ['USERNAME', 'lainproliant'],
-  \ ['LOCATION', 'Seattle, WA USA']
+  \ ['FORMALDATE', 'TemplateSettingsFormalDate'],
+  \ ['USERNAME', 'TemplateSettingsUsername'],
+  \ ['LOCATION', 'TemplateSettingsLocation']
   \ ]
 
 function s:monthday()
@@ -26,6 +28,14 @@ function! s:year()
   return strftime('%Y')
 endfunction
 
-function! g:template_settings#formal_date()
+function! g:TemplateSettingsFormalDate()
   return s:weekday() . ' ' . s:monthname() . ' ' . s:monthday() . ', ' . s:year()
+endfunction
+
+function! g:TemplateSettingsUsername()
+  return 'lainproliant'
+endfunction
+
+function! g:TemplateSettingsLocation()
+  return 'Seattle, WA USA'
 endfunction
