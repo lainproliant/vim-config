@@ -2,7 +2,7 @@ create or replace package %FILE%
 is
 /*
  * %FFILE%
- * 
+ *
  * Author: %USER% (%MAIL%)
  * Date: %FORMALDATE%
  *
@@ -12,7 +12,7 @@ is
   procedure main (pv_param1 varchar2(50)
                  ,pv_param2 varchar2(50));
 
-end %FILE% 
+end %FILE%
 /
 
 show errors
@@ -43,7 +43,7 @@ is
 
   end main;
 
-end %FILE% 
+end %FILE%
 /
 
 show errors

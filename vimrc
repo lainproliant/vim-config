@@ -15,7 +15,7 @@ set nofoldenable     " Disable folding.
 set autoread
 set splitbelow
 set splitright
-set autochdir        " automatically switch to the file's directory.
+autocmd BufEnter * silent! lcd %:p:h " automatically switch to the file's directory.
 
 " This supposedly fixes termguicolors in tmux.
 "let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
@@ -46,9 +46,6 @@ set mouse=a             " Enable the mouse in all modes.
 
 " Auto-completion options
 set completeopt=longest,menuone
-
-" Always vertically center the current line.
-"set scrolloff=999
 
 " Map Ctrl+<ijkl> to window/split navigation.
 map <c-j> <c-w>j
@@ -135,6 +132,7 @@ source $HOME/.vim/seiya_settings.vim
 source $HOME/.vim/tagbar_settings.vim
 source $HOME/.vim/template_settings.vim
 source $HOME/.vim/vimwiki_settings.vim
+source $HOME/.vim/whitespace_settings.vim
 source $HOME/.vim/ycm_settings.vim
 
 " Make the gutter have no background color.
@@ -156,3 +154,6 @@ function! DateSave(filename) range
     execute "write " . l:filename
 endfunction
 command! -nargs=1 DS call DateSave( <q-args> )
+
+" Create the file under the cursor and open for editing.
+map <leader>gf :e <cfile><cr>

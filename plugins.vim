@@ -27,6 +27,7 @@ Plug 'majutsushi/tagbar'               " View file outline from ctags
 Plug 'manasthakur/vim-commentor'       " Automatically comment/uncomment
 Plug 'neomake/neomake'                 " Async syntax linter
 Plug 'nixprime/cpsm', { 'do': './install.sh' } " Context aware find helper for ctrlp
+Plug 'ntpeters/vim-better-whitespace'  " Highlight/strip whitespace and such.
 Plug 'nvie/vim-flake8'                 " Flake8 integration
 Plug 'pangloss/vim-javascript'         " Vim indentation
 Plug 'plasticboy/vim-markdown'         " Vim Markdown mode
