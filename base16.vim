@@ -3,7 +3,7 @@
 
 " base16-vim (https://github.com/chriskempson/base16-vim)
 " by Chris Kempson (http://chriskempson.com)
-" Green Screen scheme by Chris Kempson (http://chriskempson.com)
+" IR Black scheme by Timothée Poisot (http://timotheepoisot.fr)
 
 " This enables the coresponding base16-shell script to run so that
 " :colorscheme works in terminals supported by base16-shell scripts
@@ -11,43 +11,43 @@
 "   let g:base16_shell_path=base16-builder/output/shell/
 if !has("gui_running")
   if exists("g:base16_shell_path")
-    execute "silent !/bin/sh ".g:base16_shell_path."/base16-greenscreen.sh"
+    execute "silent !/bin/sh ".g:base16_shell_path."/base16-irblack.sh"
   endif
 endif
 
 " GUI color definitions
-let s:gui00        = "001100"
-let g:base16_gui00 = "001100"
-let s:gui01        = "003300"
-let g:base16_gui01 = "003300"
-let s:gui02        = "005500"
-let g:base16_gui02 = "005500"
-let s:gui03        = "007700"
-let g:base16_gui03 = "007700"
-let s:gui04        = "009900"
-let g:base16_gui04 = "009900"
-let s:gui05        = "00bb00"
-let g:base16_gui05 = "00bb00"
-let s:gui06        = "00dd00"
-let g:base16_gui06 = "00dd00"
-let s:gui07        = "00ff00"
-let g:base16_gui07 = "00ff00"
-let s:gui08        = "007700"
-let g:base16_gui08 = "007700"
-let s:gui09        = "009900"
-let g:base16_gui09 = "009900"
-let s:gui0A        = "007700"
-let g:base16_gui0A = "007700"
-let s:gui0B        = "00bb00"
-let g:base16_gui0B = "00bb00"
-let s:gui0C        = "005500"
-let g:base16_gui0C = "005500"
-let s:gui0D        = "009900"
-let g:base16_gui0D = "009900"
-let s:gui0E        = "00bb00"
-let g:base16_gui0E = "00bb00"
-let s:gui0F        = "005500"
-let g:base16_gui0F = "005500"
+let s:gui00        = "000000"
+let g:base16_gui00 = "000000"
+let s:gui01        = "242422"
+let g:base16_gui01 = "242422"
+let s:gui02        = "484844"
+let g:base16_gui02 = "484844"
+let s:gui03        = "6c6c66"
+let g:base16_gui03 = "6c6c66"
+let s:gui04        = "918f88"
+let g:base16_gui04 = "918f88"
+let s:gui05        = "b5b3aa"
+let g:base16_gui05 = "b5b3aa"
+let s:gui06        = "d9d7cc"
+let g:base16_gui06 = "d9d7cc"
+let s:gui07        = "fdfbee"
+let g:base16_gui07 = "fdfbee"
+let s:gui08        = "ff6c60"
+let g:base16_gui08 = "ff6c60"
+let s:gui09        = "e9c062"
+let g:base16_gui09 = "e9c062"
+let s:gui0A        = "ffffb6"
+let g:base16_gui0A = "ffffb6"
+let s:gui0B        = "a8ff60"
+let g:base16_gui0B = "a8ff60"
+let s:gui0C        = "c6c5fe"
+let g:base16_gui0C = "c6c5fe"
+let s:gui0D        = "96cbfe"
+let g:base16_gui0D = "96cbfe"
+let s:gui0E        = "ff73fd"
+let g:base16_gui0E = "ff73fd"
+let s:gui0F        = "b18a3d"
+let g:base16_gui0F = "b18a3d"
 
 " Terminal color definitions
 let s:cterm00        = "00"
@@ -100,22 +100,22 @@ endif
 
 " Neovim terminal colours
 if has("nvim")
-  let g:terminal_color_0 =  "#001100"
-  let g:terminal_color_1 =  "#007700"
-  let g:terminal_color_2 =  "#00bb00"
-  let g:terminal_color_3 =  "#007700"
-  let g:terminal_color_4 =  "#009900"
-  let g:terminal_color_5 =  "#00bb00"
-  let g:terminal_color_6 =  "#005500"
-  let g:terminal_color_7 =  "#00bb00"
-  let g:terminal_color_8 =  "#007700"
-  let g:terminal_color_9 =  "#007700"
-  let g:terminal_color_10 = "#00bb00"
-  let g:terminal_color_11 = "#007700"
-  let g:terminal_color_12 = "#009900"
-  let g:terminal_color_13 = "#00bb00"
-  let g:terminal_color_14 = "#005500"
-  let g:terminal_color_15 = "#00ff00"
+  let g:terminal_color_0 =  "#000000"
+  let g:terminal_color_1 =  "#ff6c60"
+  let g:terminal_color_2 =  "#a8ff60"
+  let g:terminal_color_3 =  "#ffffb6"
+  let g:terminal_color_4 =  "#96cbfe"
+  let g:terminal_color_5 =  "#ff73fd"
+  let g:terminal_color_6 =  "#c6c5fe"
+  let g:terminal_color_7 =  "#b5b3aa"
+  let g:terminal_color_8 =  "#6c6c66"
+  let g:terminal_color_9 =  "#ff6c60"
+  let g:terminal_color_10 = "#a8ff60"
+  let g:terminal_color_11 = "#ffffb6"
+  let g:terminal_color_12 = "#96cbfe"
+  let g:terminal_color_13 = "#ff73fd"
+  let g:terminal_color_14 = "#c6c5fe"
+  let g:terminal_color_15 = "#fdfbee"
   let g:terminal_color_background = g:terminal_color_0
   let g:terminal_color_foreground = g:terminal_color_5
   if &background == "light"
@@ -124,29 +124,29 @@ if has("nvim")
   endif
 elseif has("terminal")
   let g:terminal_ansi_colors = [
-        \ "#001100",
-        \ "#007700",
-        \ "#00bb00",
-        \ "#007700",
-        \ "#009900",
-        \ "#00bb00",
-        \ "#005500",
-        \ "#00bb00",
-        \ "#007700",
-        \ "#007700",
-        \ "#00bb00",
-        \ "#007700",
-        \ "#009900",
-        \ "#00bb00",
-        \ "#005500",
-        \ "#00ff00",
+        \ "#000000",
+        \ "#ff6c60",
+        \ "#a8ff60",
+        \ "#ffffb6",
+        \ "#96cbfe",
+        \ "#ff73fd",
+        \ "#c6c5fe",
+        \ "#b5b3aa",
+        \ "#6c6c66",
+        \ "#ff6c60",
+        \ "#a8ff60",
+        \ "#ffffb6",
+        \ "#96cbfe",
+        \ "#ff73fd",
+        \ "#c6c5fe",
+        \ "#fdfbee",
         \ ]
 endif
 
 " Theme setup
 hi clear
 syntax reset
-let g:colors_name = "base16-greenscreen"
+let g:colors_name = "base16-irblack"
 
 " Highlighting function
 " Optional variables are attributes and guisp
@@ -364,6 +364,7 @@ call <sid>hi("pythonOperator",  s:gui0E, "", s:cterm0E, "", "", "")
 call <sid>hi("pythonRepeat",    s:gui0E, "", s:cterm0E, "", "", "")
 call <sid>hi("pythonInclude",   s:gui0E, "", s:cterm0E, "", "", "")
 call <sid>hi("pythonStatement", s:gui0E, "", s:cterm0E, "", "", "")
+call <sid>hi("pythonFunction",  s:gui06, "", s:cterm05, "", "", "")
 
 " Ruby highlighting
 call <sid>hi("rubyAttribute",               s:gui0D, "", s:cterm0D, "", "", "")

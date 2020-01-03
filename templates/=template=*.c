@@ -9,5 +9,4 @@
 
 #include "%FILE%.h"
 
-
 %HERE%

@@ -1,8 +1,10 @@
 call plug#begin('~/.vim/user-plugs')
+
 Plug 'abnt713/vim-hashpunk'            " hashpunk colorschemes
 Plug 'alfredodeza/pytest.vim'          " pytest integration for vim
 Plug 'ambv/black'                      " Python black integration.
 Plug 'aperezdc/vim-template'           " A VIM plugin for managing templates.
+Plug 'archseer/colibri.vim'            " colibri colorscheme
 Plug 'arcticicestudio/nord-vim'        " Nordic ice colorscheme.
 Plug 'arzg/vim-substrata'              " A cold dark colorscheme.
 Plug 'chase/focuspoint-vim'            " focuspoint colorscheme
@@ -22,6 +24,7 @@ Plug 'jkramer/vim-checkbox'            " Nice mappings for checkbox toggle.
 Plug 'jlanzarotta/bufexplorer'         " Easy manipulation of buffers.
 Plug 'junegunn/goyo.vim'               " Cleanroom for writing, use :Goyo
 Plug 'justinmk/vim-syntax-extra'       " Vim syntax highlighting for c, bison, flex
+Plug 'lainproliant/VisualStudioDark.vim'    " Dark Visual Studio theme
 Plug 'leafgarland/typescript-vim'      " Typescript support
 Plug 'majutsushi/tagbar'               " View file outline from ctags
 Plug 'manasthakur/vim-commentor'       " Automatically comment/uncomment
@@ -51,5 +54,8 @@ Plug 'vim-scripts/HTML-AutoCloseTag'   " Automatically close HTML tags.
 Plug 'vim-scripts/indentpython.vim'    " Special indentation for Python
 Plug 'vim-scripts/ScrollColors'        " Scroll through availale color schemes
 Plug 'vim-scripts/SyntaxRange'         " Define a different filetype syntax on regions in a buffer
+Plug 'vim-scripts/Visual-Studio'       " Visual Studio Colorscheme
+Plug 'vim/killersheep'                 " God help us all
 Plug 'whatyouhide/vim-gotham'          " Color scheme
+Plug 'xstrex/FireCode.vim'             " FireCode colorscheme
 call plug#end()

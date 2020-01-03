@@ -5,9 +5,9 @@ set autoindent       " Copy indent from current line when starting a new line.
 set smartindent      " Smart indentation.
 set showmatch        " Show matching parenthesis and brackets and stuff.
 set expandtab        " Tab inserts a number of spaces instead of a tab character.
-set tabstop=3        " The width in spaces of a Tab.
-set shiftwidth=3     " Number of spaces used for each step of indention.
-set softtabstop=3    " The number of spaces inserted by Tab in insert mode.
+set tabstop=4        " The width in spaces of a Tab.
+set shiftwidth=4     " Number of spaces used for each step of indention.
+set softtabstop=4    " The number of spaces inserted by Tab in insert mode.
 set ruler            " Show the line and column number of the cursor position.
 set showmode         " Show the current editing mode at the bottom.
 set laststatus=2     " Allow airline to always appear.
@@ -115,7 +115,6 @@ source $HOME/.vim/plugins.vim
 
 " Include context-specific configs.
 source $HOME/.vim/ack_settings.vim
-source $HOME/.vim/base16.vim
 source $HOME/.vim/calendar_settings.vim
 source $HOME/.vim/checkbox_settings.vim
 source $HOME/.vim/choosewin_settings.vim
@@ -134,6 +133,9 @@ source $HOME/.vim/template_settings.vim
 source $HOME/.vim/vimwiki_settings.vim
 source $HOME/.vim/whitespace_settings.vim
 source $HOME/.vim/ycm_settings.vim
+
+"source $HOME/.vim/base16.vim
+colorscheme VisualStudioDark
 
 " Make the gutter have no background color.
 ""hi SignColumn guibg=NONE
@@ -157,3 +159,9 @@ command! -nargs=1 DS call DateSave( <q-args> )
 
 " Create the file under the cursor and open for editing.
 map <leader>gf :e <cfile><cr>
+
+" Identify the highlight group under the cursor, helpful for debugging
+" colorschemes and decomposing them.
+map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
+\ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
+\ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
