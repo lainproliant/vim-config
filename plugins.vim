@@ -53,6 +53,7 @@ Plug 'vim-airline/vim-airline-themes'  " Themes for airline
 Plug 'vim-scripts/HTML-AutoCloseTag'   " Automatically close HTML tags.
 Plug 'vim-scripts/indentpython.vim'    " Special indentation for Python
 Plug 'vim-scripts/ScrollColors'        " Scroll through availale color schemes
+Plug 'vim-scripts/sessionman.vim'      " An easy to use session manager.
 Plug 'vim-scripts/SyntaxRange'         " Define a different filetype syntax on regions in a buffer
 Plug 'vim-scripts/Visual-Studio'       " Visual Studio Colorscheme
 Plug 'vim/killersheep'                 " God help us all
