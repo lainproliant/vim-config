@@ -15,6 +15,7 @@ Plug 'ddrscott/vim-side-search'        " Another async grep, :SideSearch
 Plug 'easymotion/vim-easymotion'       " Quickly move to areas in a buffer using alphabetic hints
 Plug 'enricobacis/vim-airline-clock'   " A clock for vim-airline, powered by Vim8 timers
 Plug 'fisadev/vim-isort'               " Adds the :Isort command to sort python imports.
+Plug 'flazz/vim-colorschemes'          " More Colorschemes
 Plug 'hauleth/blame.vim'               " Another good color scheme.
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' } " Newer markdown previewer.
 Plug 'itchyny/calendar.vim'            " Vim-TUI interface to Google Calendar
@@ -28,12 +29,16 @@ Plug 'lainproliant/VisualStudioDark.vim'    " Dark Visual Studio theme
 Plug 'leafgarland/typescript-vim'      " Typescript support
 Plug 'majutsushi/tagbar'               " View file outline from ctags
 Plug 'manasthakur/vim-commentor'       " Automatically comment/uncomment
+Plug 'mnishz/colorscheme-preview.vim'  " A modern colorscheme previewer with Vim8 popup window
+Plug 'mswift42/vim-themes'             " Colorschemes ported from Emacs.
 Plug 'neomake/neomake'                 " Async syntax linter
 Plug 'nixprime/cpsm', { 'do': './install.sh' } " Context aware find helper for ctrlp
 Plug 'ntpeters/vim-better-whitespace'  " Highlight/strip whitespace and such.
 Plug 'nvie/vim-flake8'                 " Flake8 integration
 Plug 'pangloss/vim-javascript'         " Vim indentation
 Plug 'plasticboy/vim-markdown'         " Vim Markdown mode
+Plug 'rafi/awesome-vim-colorschemes'   " Colorscheme Collection
+Plug 'rainglow/vim'                    " Colorscheme Collection
 Plug 'rbong/vim-flog'                  " Graphical branch viewer
 Plug 'rhysd/vim-clang-format'          " Format C family code automatically
 Plug 'Rigellute/shades-of-purple.vim'  " A purple theme

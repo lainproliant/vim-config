@@ -1,8 +1,8 @@
 " Vim color file
-" Maintainer: Lee Supe
+" Maintainer: Lain Musgrove
 " Last Change: 2009 April 14
 "
-" Lee's Favorite Color Theme!
+" Lain's Favorite Color Theme!
 " This scheme is designed for rxvt-unicode 88 color mode
 
 set background=dark
@@ -21,8 +21,8 @@ hi Special      ctermfg=DarkCyan
 hi Identifier   ctermfg=LightGray
 hi Statement    ctermfg=DarkCyan
 hi PreProc      ctermfg=Red
-hi Type         ctermfg=Cyan         
-hi Function     ctermfg=LightBlue             
+hi Type         ctermfg=Cyan
+hi Function     ctermfg=LightBlue
 hi Repeat       ctermfg=Cyan
 hi Operator     ctermfg=Cyan
 hi Ignore       ctermfg=Black
@@ -55,4 +55,3 @@ hi link SpecialChar	Special
 hi link Delimiter	Special
 hi link SpecialComment  Special
 hi link Debug		Special
-

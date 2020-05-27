@@ -67,9 +67,9 @@ map <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
 pythonx import neovim
 
 " Aliases for re-orientation of split windows.
-command Horizontal   :windo wincmd K
-command Vertical     :windo wincmd H
-command Term         :term ++curwin
+command! Horizontal   :windo wincmd K
+command! Vertical     :windo wincmd H
+command! Term         :term ++curwin
 
 set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
 
@@ -110,6 +110,9 @@ command! Vimrc :e ~/.vim/vimrc
 command! VimPlugins :e ~/.vim/plugins.vim
 command! VimrcReload :source ~/.vim/vimrc
 
+" Load the in-development ZK plugin.
+source $HOME/proj/zk/zk.vim
+
 " Load user plugins
 source $HOME/.vim/plugins.vim
 
@@ -136,11 +139,13 @@ source $HOME/.vim/ycm_settings.vim
 
 "source $HOME/.vim/base16.vim
 "colorscheme VisualStudioDark
-colorscheme ekvoli
+"colorscheme ekvoli
+"colorscheme tcsoft
+colorscheme DevC++
 
 " Make the gutter have no background color.
 ""hi SignColumn guibg=NONE
-"hi Normal guibg=NONE ctermbg=000000
+hi Normal guibg=NONE ctermbg=000000
 
 " Set guifont for gvim
 set guifont=Iosevka\ Nerd\ Font\ 14
