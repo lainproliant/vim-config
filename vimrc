@@ -137,15 +137,16 @@ source $HOME/.vim/vimwiki_settings.vim
 source $HOME/.vim/whitespace_settings.vim
 source $HOME/.vim/ycm_settings.vim
 
-"source $HOME/.vim/base16.vim
+source $HOME/.vim/base16.vim
 "colorscheme VisualStudioDark
 "colorscheme ekvoli
 "colorscheme tcsoft
-colorscheme DevC++
+"colorscheme DevC++
+"colorscheme borland
 
 " Make the gutter have no background color.
 ""hi SignColumn guibg=NONE
-hi Normal guibg=NONE ctermbg=000000
+"hi Normal guibg=NONE ctermbg=000000
 
 " Set guifont for gvim
 set guifont=Iosevka\ Nerd\ Font\ 14

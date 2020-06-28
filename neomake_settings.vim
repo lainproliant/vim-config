@@ -27,6 +27,7 @@ call add(pylint_ignore, 'C0330') " Wrong hanging indent before block.
 call add(pylint_ignore, 'R0902') " Too many instance attributes.
 call add(pylint_ignore, 'R0903') " Too few public methods in class.
 call add(pylint_ignore, 'R0914') " Too many local variables.
+call add(pylint_ignore, 'R0201') " Method could be a function (no self use)
 call add(pylint_ignore, 'W')     " Disable all warnings.
 
 let flake8_ignore = []
