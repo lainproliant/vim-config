@@ -37,6 +37,7 @@ Plug 'ntpeters/vim-better-whitespace'  " Highlight/strip whitespace and such.
 Plug 'nvie/vim-flake8'                 " Flake8 integration
 Plug 'pangloss/vim-javascript'         " Vim indentation
 Plug 'plasticboy/vim-markdown'         " Vim Markdown mode
+Plug 'psliwka/vim-smoothie'            " A smooth scrolling plugin.
 Plug 'rafi/awesome-vim-colorschemes'   " Colorscheme Collection
 Plug 'rainglow/vim'                    " Colorscheme Collection
 Plug 'rbong/vim-flog'                  " Graphical branch viewer
