@@ -46,6 +46,7 @@ Plug 'Rigellute/shades-of-purple.vim'  " A purple theme
 Plug 'rking/ag.vim'                    " Replace ferret, because it defines :Black and conflitcs with black
 Plug 'scottymoon/vim-twilight'         " twilight colorscheme
 Plug 't9md/vim-choosewin'              " Quickly switch between buffers by letter
+Plug 'tell-k/vim-autoflake'            " Autoflake support for Vim.
 Plug 'tmhedberg/SimpylFold'            " Proper folding for Python
 Plug 'tpope/vim-fugitive'              " A Git Wrapper
 Plug 'tpope/vim-sleuth'                " Respect file indentation.

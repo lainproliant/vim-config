@@ -118,6 +118,7 @@ source $HOME/.vim/plugins.vim
 
 " Include context-specific configs.
 source $HOME/.vim/ack_settings.vim
+source $HOME/.vim/autoflake_settings.vim
 source $HOME/.vim/calendar_settings.vim
 source $HOME/.vim/checkbox_settings.vim
 source $HOME/.vim/choosewin_settings.vim
@@ -137,9 +138,9 @@ source $HOME/.vim/vimwiki_settings.vim
 source $HOME/.vim/whitespace_settings.vim
 source $HOME/.vim/ycm_settings.vim
 
-source $HOME/.vim/base16.vim
+"source $HOME/.vim/base16.vim
 "colorscheme VisualStudioDark
-"colorscheme ekvoli
+colorscheme ekvoli
 "colorscheme tcsoft
 "colorscheme DevC++
 "colorscheme borland
