@@ -1,51 +1,45 @@
-set nocompatible     " Non-VI compatible mode.
 filetype off
-set cindent          " Enable C-style auto-indenting.
 set autoindent       " Copy indent from current line when starting a new line.
-set smartindent      " Smart indentation.
-set showmatch        " Show matching parenthesis and brackets and stuff.
-set expandtab        " Tab inserts a number of spaces instead of a tab character.
-set tabstop=4        " The width in spaces of a Tab.
-set shiftwidth=4     " Number of spaces used for each step of indention.
-set softtabstop=4    " The number of spaces inserted by Tab in insert mode.
-set ruler            " Show the line and column number of the cursor position.
-set showmode         " Show the current editing mode at the bottom.
-set laststatus=2     " Allow airline to always appear.
-set nofoldenable     " Disable folding.
 set autoread
+set background=light " Prevent Vim 8.0 syncolor.vim shenanigans
+set backspace=2         " Allow backspace to work fully in insert mode.
+set cindent          " Enable C-style auto-indenting.
+set cino=g0,+0,(0,j1,:0,N-s,i0,W4,m1
+set completeopt=longest,menuone
+set expandtab        " Tab inserts a number of spaces instead of a tab character.
+set foldlevel=99
+set foldmethod=indent
+set formatoptions+=r    " Automatically insert comment characters.
+set laststatus=2     " Allow airline to always appear.
+set mouse=a             " Enable the mouse in all modes.
+set nobackup
+set nocompatible     " Non-VI compatible mode.
+set noeb novb " Disable awesome beepy sounds.
+set nofoldenable     " Disable folding.
+set noswapfile
+set nowritebackup
+set ruler            " Show the line and column number of the cursor position.
+set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
+set shiftwidth=4     " Number of spaces used for each step of indention.
+set showmatch        " Show matching parenthesis and brackets and stuff.
+set showmode         " Show the current editing mode at the bottom.
+set smartindent      " Smart indentation.
+set softtabstop=4    " The number of spaces inserted by Tab in insert mode.
 set splitbelow
 set splitright
-autocmd BufEnter * silent! lcd %:p:h " automatically switch to the file's directory.
-
-" This supposedly fixes termguicolors in tmux.
-"let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-"let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+set t_Co=256
+set tabstop=4        " The width in spaces of a Tab.
 set termguicolors    " Use gui colors in the terminal
+"hi SignColumn guibg=NONE
 
 " Automatically resize splits to equal size.
 autocmd VimResized * wincmd =
 
-" Enable folding
-set foldmethod=indent
-set foldlevel=99
+" Automatically switch to the file's directory.
+autocmd BufEnter * silent! lcd %:p:h
 
 " Enable folding with the spacebar
 nnoremap <space> za
-
-" C/C++ indent options
-set cino=g0,+0,(0,j1,:0,N-s,i0,W4,m1
-
-" These lines disable the creation of backup and swap files.
-set nobackup
-set nowritebackup
-set noswapfile
-
-set formatoptions+=r    " Automatically insert comment characters.
-set backspace=2         " Allow backspace to work fully in insert mode.
-set mouse=a             " Enable the mouse in all modes.
-
-" Auto-completion options
-set completeopt=longest,menuone
 
 " Map Ctrl+<ijkl> to window/split navigation.
 map <c-j> <c-w>j
@@ -60,8 +54,7 @@ map [c <c-p>
 " Setup \q to close a buffer without closing the window.
 map <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
 
-" Setup \t to test the current file in PyTest
-" map <leader>t :Pytest file<CR>
+"map <leader>t :Pytest file<CR>
 
 " Enable python3 neovim module for vim8
 pythonx import neovim
@@ -71,36 +64,11 @@ command! Horizontal   :windo wincmd K
 command! Vertical     :windo wincmd H
 command! Term         :term ++curwin
 
-set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
-
-" Disable awesome beepy sounds.
-set noeb novb
-
 if &term =~ '256color'
   " disable Background Color Erase (BCE) so that color schemes
   " render properly when inside 256-color tmux and GNU screen.
   set t_ut=
 endif
-
-set t_Co=256
-
-" --------- Options for GVim ---------
-" Remove all menus, toolbars, and status bars.
-set guioptions-=m
-set guioptions-=T
-set guioptions-=r
-set guioptions-=L
-
-set guifont=Courier\ Prime\ Code\ 13
-
-set mousemodel=popup
-
-" Block out annoying middle-mouse clicks from pasting
-" links or whatever else is in the clipboard.
-" This is necessary if you are using a touchpad with
-" middle click, otherwise don't worry about it.
-:map <MiddleMouse> <Nop>
-:imap <MiddleMouse> <Nop>
 
 " Makes a split `<Ctrl-w>s` in a terminal buffer spawn a new terminal.
 autocmd BufWinEnter,WinEnter term://* nnoremap <buffer> <C-w>s <C-\><C-n><C-w><C-v> :terminal <CR>
@@ -110,11 +78,9 @@ command! Vimrc :e ~/.vim/vimrc
 command! VimPlugins :e ~/.vim/plugins.vim
 command! VimrcReload :source ~/.vim/vimrc
 
-" Load the in-development ZK plugin.
-source $HOME/proj/zk/zk.vim
-
 " Load user plugins
 source $HOME/.vim/plugins.vim
+source $HOME/.vim/debug_scriptnames.vim
 
 " Include context-specific configs.
 source $HOME/.vim/ack_settings.vim
@@ -143,27 +109,10 @@ source $HOME/.vim/ycm_settings.vim
 colorscheme ekvoli
 "colorscheme tcsoft
 "colorscheme DevC++
-"colorscheme borland
+"colorscheme thegoodluck
 
 " Make the gutter have no background color.
-""hi SignColumn guibg=NONE
 "hi Normal guibg=NONE ctermbg=000000
-
-" Set guifont for gvim
-set guifont=Iosevka\ Nerd\ Font\ 14
-
-" Save a file with date prepended
-function! DateSave(filename) range
-    let l:extension = '.' . fnamemodify( a:filename, ':e' )
-    if len(l:extension) == 1
-        let l:extension = '.md'
-    endif
-
-    let l:filename = escape( fnamemodify(a:filename, ':r') . strftime("-%Y-%m-%d") . l:extension, ' ' )
-
-    execute "write " . l:filename
-endfunction
-command! -nargs=1 DS call DateSave( <q-args> )
 
 " Create the file under the cursor and open for editing.
 map <leader>gf :e <cfile><cr>

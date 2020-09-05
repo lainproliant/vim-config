@@ -2,7 +2,6 @@ call plug#begin('~/.vim/user-plugs')
 
 Plug 'abnt713/vim-hashpunk'            " hashpunk colorschemes
 Plug 'alfredodeza/pytest.vim'          " pytest integration for vim
-Plug 'ambv/black'                      " Python black integration.
 Plug 'aperezdc/vim-template'           " A VIM plugin for managing templates.
 Plug 'archseer/colibri.vim'            " colibri colorscheme
 Plug 'arcticicestudio/nord-vim'        " Nordic ice colorscheme.
@@ -16,6 +15,7 @@ Plug 'easymotion/vim-easymotion'       " Quickly move to areas in a buffer using
 Plug 'enricobacis/vim-airline-clock'   " A clock for vim-airline, powered by Vim8 timers
 Plug 'fisadev/vim-isort'               " Adds the :Isort command to sort python imports.
 Plug 'flazz/vim-colorschemes'          " More Colorschemes
+Plug 'fs111/pydoc.vim'                 " Pydoc integration.
 Plug 'hauleth/blame.vim'               " Another good color scheme.
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' } " Newer markdown previewer.
 Plug 'itchyny/calendar.vim'            " Vim-TUI interface to Google Calendar
@@ -37,6 +37,7 @@ Plug 'ntpeters/vim-better-whitespace'  " Highlight/strip whitespace and such.
 Plug 'nvie/vim-flake8'                 " Flake8 integration
 Plug 'pangloss/vim-javascript'         " Vim indentation
 Plug 'plasticboy/vim-markdown'         " Vim Markdown mode
+Plug 'psf/black', { 'commit': 'ce14fa8b497bae2b50ec48b3bd7022573a59cdb1' }
 Plug 'psliwka/vim-smoothie'            " A smooth scrolling plugin.
 Plug 'rafi/awesome-vim-colorschemes'   " Colorscheme Collection
 Plug 'rainglow/vim'                    " Colorscheme Collection
