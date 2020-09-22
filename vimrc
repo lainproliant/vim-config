@@ -104,15 +104,15 @@ source $HOME/.vim/vimwiki_settings.vim
 source $HOME/.vim/whitespace_settings.vim
 source $HOME/.vim/ycm_settings.vim
 
-"source $HOME/.vim/base16.vim
+source $HOME/.vim/base16.vim
 "colorscheme VisualStudioDark
-colorscheme ekvoli
+"colorscheme ekvoli
 "colorscheme tcsoft
 "colorscheme DevC++
 "colorscheme thegoodluck
 
 " Make the gutter have no background color.
-"hi Normal guibg=NONE ctermbg=000000
+hi Normal guibg=NONE ctermbg=000000
 
 " Create the file under the cursor and open for editing.
 map <leader>gf :e <cfile><cr>
