@@ -33,6 +33,7 @@ call add(pylint_ignore, 'R0914') " Too many local variables.
 call add(pylint_ignore, 'W')     " Disable all warnings.
 
 let flake8_ignore = []
+call add(flake8_ignore, 'E305')  " Expected two blank lines, found one
 call add(flake8_ignore, 'E302')  " Expected two blank lines, found one
 call add(flake8_ignore, 'E501')  " Line too long.
 call add(flake8_ignore, 'W503')  " Line break occurred before a binary operator (pep8 wants this!)
