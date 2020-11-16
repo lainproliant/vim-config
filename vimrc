@@ -106,10 +106,11 @@ source $HOME/.vim/ycm_settings.vim
 
 "source $HOME/.vim/base16.vim
 "colorscheme VisualStudioDark
-colorscheme ekvoli
+"colorscheme ekvoli
 "colorscheme tcsoft
 "colorscheme DevC++
 "colorscheme thegoodluck
+colorscheme iceberg
 
 " Make the gutter have no background color.
 "hi Normal guibg=NONE ctermbg=000000

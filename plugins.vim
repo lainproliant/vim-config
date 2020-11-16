@@ -27,6 +27,7 @@ Plug 'junegunn/goyo.vim'               " Cleanroom for writing, use :Goyo
 Plug 'justinmk/vim-syntax-extra'       " Vim syntax highlighting for c, bison, flex
 Plug 'lainproliant/VisualStudioDark.vim'    " Dark Visual Studio theme
 Plug 'leafgarland/typescript-vim'      " Typescript support
+Plug 'letorbi/vim-colors-borland'      " A Borland like modern colorscheme.
 Plug 'majutsushi/tagbar'               " View file outline from ctags
 Plug 'manasthakur/vim-commentor'       " Automatically comment/uncomment
 Plug 'mnishz/colorscheme-preview.vim'  " A modern colorscheme previewer with Vim8 popup window
