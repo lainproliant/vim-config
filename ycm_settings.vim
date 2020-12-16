@@ -5,8 +5,12 @@ let g:ycm_warning_symbol = '>>'
 let g:ycm_extra_conf_globlist = ['~/proj/*','!~/*']
 let g:ycm_always_populate_location_list = 1
 
+" for debugging purposes.
+let g:ycm_server_keep_logfile = 1
+let g:ycm_server_log_level = 'debug'
+
 let g:ycm_autoclose_preview_window_after_completion=1
 nmap <leader>d  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nmap <leader>r  :YcmCompleter GoToReferences<CR>
-nmap <leader>z  :YcmRestartServer<CR>
+nmap <leader>q  :YcmRestartServer<CR>
 nmap <leader>f  :YcmCompleter FixIt<CR>
