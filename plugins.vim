@@ -23,6 +23,7 @@ Plug 'jamessan/vim-gnupg'              " gpg encryption integration
 Plug 'jiangmiao/auto-pairs'            " Automatically close pairs.
 Plug 'jkramer/vim-checkbox'            " Nice mappings for checkbox toggle.
 Plug 'jlanzarotta/bufexplorer'         " Easy manipulation of buffers.
+Plug 'jremmen/vim-ripgrep'             " Ripgrep for vim
 Plug 'junegunn/goyo.vim'               " Cleanroom for writing, use :Goyo
 Plug 'justinmk/vim-syntax-extra'       " Vim syntax highlighting for c, bison, flex
 Plug 'lainproliant/VisualStudioDark.vim'    " Dark Visual Studio theme
@@ -37,6 +38,7 @@ Plug 'nixprime/cpsm'                   " Context aware find helper for ctrlp
 Plug 'ntpeters/vim-better-whitespace'  " Highlight/strip whitespace and such.
 Plug 'nvie/vim-flake8'                 " Flake8 integration
 Plug 'pangloss/vim-javascript'         " Vim indentation
+Plug 'PeterRincker/vim-argumentative'
 Plug 'plasticboy/vim-markdown'         " Vim Markdown mode
 Plug 'psf/black', { 'commit': 'ce14fa8b497bae2b50ec48b3bd7022573a59cdb1' }
 Plug 'psliwka/vim-smoothie'            " A smooth scrolling plugin.
@@ -45,7 +47,6 @@ Plug 'rainglow/vim'                    " Colorscheme Collection
 Plug 'rbong/vim-flog'                  " Graphical branch viewer
 Plug 'rhysd/vim-clang-format'          " Format C family code automatically
 Plug 'Rigellute/shades-of-purple.vim'  " A purple theme
-Plug 'rking/ag.vim'                    " Replace ferret, because it defines :Black and conflitcs with black
 Plug 'scottymoon/vim-twilight'         " twilight colorscheme
 Plug 't9md/vim-choosewin'              " Quickly switch between buffers by letter
 Plug 'tmhedberg/SimpylFold'            " Proper folding for Python
