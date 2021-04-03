@@ -6,13 +6,16 @@ Plug 'aperezdc/vim-template'           " A VIM plugin for managing templates.
 Plug 'archseer/colibri.vim'            " colibri colorscheme
 Plug 'arcticicestudio/nord-vim'        " Nordic ice colorscheme.
 Plug 'arzg/vim-substrata'              " A cold dark colorscheme.
+Plug 'caglartoklu/borlandp.vim'        " A classic Borland like colorscheme.
 Plug 'chase/focuspoint-vim'            " focuspoint colorscheme
 Plug 'cocopon/iceberg.vim'             " Keep those colorschemes coming...
 Plug 'craigemery/vim-autotag'          " Automatically update ctags on save.
 Plug 'ctrlpvim/ctrlp.vim'              " Fuzzy find files.
 Plug 'ddrscott/vim-side-search'        " Another async grep, :SideSearch
+Plug 'dracula/vim', { 'as': 'dracula' } " Dracula colorscheme
 Plug 'easymotion/vim-easymotion'       " Quickly move to areas in a buffer using alphabetic hints
 Plug 'enricobacis/vim-airline-clock'   " A clock for vim-airline, powered by Vim8 timers
+Plug 'fcpg/vim-farout'                 " Far-Out retro colorscheme
 Plug 'fisadev/vim-isort'               " Adds the :Isort command to sort python imports.
 Plug 'flazz/vim-colorschemes'          " More Colorschemes
 Plug 'fs111/pydoc.vim'                 " Pydoc integration.
@@ -43,7 +46,7 @@ Plug 'plasticboy/vim-markdown'         " Vim Markdown mode
 Plug 'psf/black', { 'commit': 'ce14fa8b497bae2b50ec48b3bd7022573a59cdb1' }
 Plug 'psliwka/vim-smoothie'            " A smooth scrolling plugin.
 Plug 'rafi/awesome-vim-colorschemes'   " Colorscheme Collection
-Plug 'rainglow/vim'                    " Colorscheme Collection
+Plug 'rainglow/vim', { 'as': 'rainglow' } " Colorscheme Collection
 Plug 'rbong/vim-flog'                  " Graphical branch viewer
 Plug 'rhysd/vim-clang-format'          " Format C family code automatically
 Plug 'Rigellute/shades-of-purple.vim'  " A purple theme
