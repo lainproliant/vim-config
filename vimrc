@@ -10,6 +10,7 @@ set expandtab        " Tab inserts a number of spaces instead of a tab character
 set foldlevel=99
 set foldmethod=indent
 set formatoptions+=r    " Automatically insert comment characters.
+set guicursor+=n-v-c:blinkon0
 set laststatus=2     " Allow airline to always appear.
 set mouse=a             " Enable the mouse in all modes.
 set nobackup
@@ -27,9 +28,13 @@ set smartindent      " Smart indentation.
 set softtabstop=4    " The number of spaces inserted by Tab in insert mode.
 set splitbelow
 set splitright
-set t_Co=256
 set tabstop=4        " The width in spaces of a Tab.
-set termguicolors    " Use gui colors in the terminal
+set ttymouse=sgr
+if exists('+termguicolors')
+  let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
 "hi SignColumn guibg=NONE
 
 " Automatically resize splits to equal size.
@@ -63,12 +68,6 @@ pythonx import neovim
 command! Horizontal   :windo wincmd K
 command! Vertical     :windo wincmd H
 command! Term         :term ++curwin
-
-if &term =~ '256color'
-  " disable Background Color Erase (BCE) so that color schemes
-  " render properly when inside 256-color tmux and GNU screen.
-  set t_ut=
-endif
 
 " Makes a split `<Ctrl-w>s` in a terminal buffer spawn a new terminal.
 autocmd BufWinEnter,WinEnter term://* nnoremap <buffer> <C-w>s <C-\><C-n><C-w><C-v> :terminal <CR>
