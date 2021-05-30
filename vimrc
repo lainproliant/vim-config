@@ -36,6 +36,7 @@ if exists('+termguicolors')
   set termguicolors
 endif
 "hi SignColumn guibg=NONE
+set encoding=UTF-8
 
 " Automatically resize splits to equal size.
 autocmd VimResized * wincmd =
@@ -95,6 +96,7 @@ source $HOME/.vim/insert_macros.vim
 source $HOME/.vim/markdown_settings.vim
 source $HOME/.vim/mdnav_settings.vim
 source $HOME/.vim/neomake_settings.vim
+source $HOME/.vim/nerdtree_settings.vim
 source $HOME/.vim/netrw_settings.vim
 source $HOME/.vim/seiya_settings.vim
 source $HOME/.vim/tagbar_settings.vim
