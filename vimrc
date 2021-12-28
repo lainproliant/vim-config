@@ -24,6 +24,7 @@ set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
 set shiftwidth=4     " Number of spaces used for each step of indention.
 set showmatch        " Show matching parenthesis and brackets and stuff.
 set showmode         " Show the current editing mode at the bottom.
+set signcolumn=no
 set smartindent      " Smart indentation.
 set softtabstop=4    " The number of spaces inserted by Tab in insert mode.
 set splitbelow
@@ -104,18 +105,23 @@ source $HOME/.vim/whitespace_settings.vim
 source $HOME/.vim/ycm_settings.vim
 
 set background=dark
-source $HOME/.vim/base16.vim
+"source $HOME/.vim/base16.vim
 "colorscheme VisualStudioDark
-"colorscheme ekvoli
+colorscheme ekvoli
 "colorscheme tcsoft
 "colorscheme DevC++
 "colorscheme thegoodluck
 "colorscheme iceberg
+"colorscheme corporation
 
 "source $HOME/.vim/terminal_colors.vim
 
 " Make the gutter have no background color.
 hi Normal guibg=NONE ctermbg=000000
+hi NonText guibg=NONE ctermbg=000000
+hi YcmErrorLine guibg=#3f0000
+
+
 
 " Create the file under the cursor and open for editing.
 map <leader>gf :e <cfile><cr>
