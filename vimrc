@@ -120,7 +120,7 @@ colorscheme ekvoli
 hi Normal guibg=NONE ctermbg=000000
 hi NonText guibg=NONE ctermbg=000000
 hi YcmErrorLine guibg=#3f0000
-
+hi SpellCap guibg=#3f3f00
 
 
 " Create the file under the cursor and open for editing.
