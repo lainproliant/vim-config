@@ -30,7 +30,11 @@ set softtabstop=4    " The number of spaces inserted by Tab in insert mode.
 set splitbelow
 set splitright
 set tabstop=4        " The width in spaces of a Tab.
-set ttymouse=sgr
+
+if !has('nvim')
+    set ttymouse=sgr
+endif
+
 if exists('+termguicolors')
   let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
   let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
@@ -62,6 +66,10 @@ map <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
 
 "map <leader>t :Pytest file<CR>
 
+" Setup \b and \n to go back and forward in the jump list.
+map <leader>b <C-o>
+map <leader>n <C-i>
+
 " Enable python3 neovim module for vim8
 pythonx import neovim
 
@@ -89,6 +97,7 @@ source $HOME/.vim/calendar_settings.vim
 source $HOME/.vim/checkbox_settings.vim
 source $HOME/.vim/choosewin_settings.vim
 source $HOME/.vim/colorizer_settings.vim
+source $HOME/.vim/coc_settings.vim
 source $HOME/.vim/ctrlp_settings.vim
 source $HOME/.vim/easymotion_settings.vim
 source $HOME/.vim/gnupg_settings.vim
@@ -102,24 +111,17 @@ source $HOME/.vim/tagbar_settings.vim
 source $HOME/.vim/template_settings.vim
 source $HOME/.vim/vimwiki_settings.vim
 source $HOME/.vim/whitespace_settings.vim
-source $HOME/.vim/ycm_settings.vim
 
 set background=dark
 "source $HOME/.vim/base16.vim
 "colorscheme VisualStudioDark
 colorscheme ekvoli
-"colorscheme tcsoft
-"colorscheme DevC++
-"colorscheme thegoodluck
-"colorscheme iceberg
-"colorscheme corporation
 
 "source $HOME/.vim/terminal_colors.vim
 
 " Make the gutter have no background color.
 hi Normal guibg=NONE ctermbg=000000
 hi NonText guibg=NONE ctermbg=000000
-hi YcmErrorLine guibg=#3f0000
 hi SpellCap guibg=#3f3f00
 
 

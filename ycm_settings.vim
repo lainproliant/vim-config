@@ -10,6 +10,18 @@ let g:ycm_server_keep_logfile = 1
 let g:ycm_server_log_level = 'debug'
 let g:ycm_autoclose_preview_window_after_completion=1
 
+" Let YCM know about other language servers.
+let g:ycm_language_server = [
+    \   {
+    \     'name': 'haskell-language-server',
+    \     'cmdline': [ 'haskell-language-server-wrapper', '--lsp'  ],
+    \     'filetypes': [ 'haskell', 'lhaskell'  ],
+    \     'project_root_files': [ 'stack.yaml', 'cabal.project', 'package.yaml', 'hie.yaml'  ],
+    \
+    \   },
+    \
+    \]
+
 nmap <leader>d  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nmap <leader>r  :YcmCompleter GoToReferences<CR>
 nmap <leader>q  :YcmRestartServer<CR>
