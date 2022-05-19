@@ -120,8 +120,8 @@ colorscheme ekvoli
 "source $HOME/.vim/terminal_colors.vim
 
 " Make the gutter have no background color.
-hi Normal guibg=NONE ctermbg=000000
-hi NonText guibg=NONE ctermbg=000000
+"hi Normal guibg=NONE ctermbg=000000
+"hi NonText guibg=NONE ctermbg=000000
 hi SpellCap guibg=#3f3f00
 
 

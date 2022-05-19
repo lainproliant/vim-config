@@ -1,8 +1,6 @@
 call plug#begin('~/.vim/user-plugs')
 
 "Plug 'Valloric/YouCompleteMe'          " A semantic completer for C/C++ and Python
-Plug 'PeterRincker/vim-argumentative'
-Plug 'Rigellute/shades-of-purple.vim'  " A purple theme
 Plug 'abnt713/vim-hashpunk'            " hashpunk colorschemes
 Plug 'alfredodeza/pytest.vim'          " pytest integration for vim
 Plug 'aperezdc/vim-template'           " A VIM plugin for managing templates.
@@ -35,7 +33,7 @@ Plug 'justinmk/vim-syntax-extra'       " Vim syntax highlighting for c, bison, f
 Plug 'lainproliant/VisualStudioDark.vim'    " Dark Visual Studio theme
 Plug 'leafgarland/typescript-vim'      " Typescript support
 Plug 'letorbi/vim-colors-borland'      " A Borland like modern colorscheme.
-Plug 'majutsushi/tagbar'               " View file outline from ctags
+Plug 'liuchengxu/vista.vim'            " LSP compatible tagbar replacement.
 Plug 'manasthakur/vim-commentor'       " Automatically comment/uncomment
 Plug 'mnishz/colorscheme-preview.vim'  " A modern colorscheme previewer with Vim8 popup window
 Plug 'mswift42/vim-themes'             " Colorschemes ported from Emacs.
@@ -45,6 +43,7 @@ Plug 'nixprime/cpsm'                   " Context aware find helper for ctrlp
 Plug 'ntpeters/vim-better-whitespace'  " Highlight/strip whitespace and such.
 Plug 'nvie/vim-flake8'                 " Flake8 integration
 Plug 'pangloss/vim-javascript'         " Vim indentation
+Plug 'PeterRincker/vim-argumentative'
 Plug 'plasticboy/vim-markdown'         " Vim Markdown mode
 Plug 'psf/black', { 'commit': 'ce14fa8b497bae2b50ec48b3bd7022573a59cdb1' }
 Plug 'psliwka/vim-smoothie'            " A smooth scrolling plugin.
@@ -52,6 +51,7 @@ Plug 'rafi/awesome-vim-colorschemes'   " Colorscheme Collection
 Plug 'rainglow/vim', { 'as': 'rainglow' } " Colorscheme Collection
 Plug 'rbong/vim-flog'                  " Graphical branch viewer
 Plug 'rhysd/vim-clang-format'          " Format C family code automatically
+Plug 'Rigellute/shades-of-purple.vim'  " A purple theme
 Plug 'scottymoon/vim-twilight'         " twilight colorscheme
 Plug 't9md/vim-choosewin'              " Quickly switch between buffers by letter
 Plug 'tmhedberg/SimpylFold'            " Proper folding for Python
@@ -63,10 +63,10 @@ Plug 'tpozzi/Sidonia'                  " More colorschemes.
 Plug 'vim-airline/vim-airline'         " Lean status/tabline
 Plug 'vim-airline/vim-airline-themes'  " Themes for airline
 Plug 'vim-scripts/HTML-AutoCloseTag'   " Automatically close HTML tags.
-Plug 'vim-scripts/SyntaxRange'         " Define a different filetype syntax on regions in a buffer
-Plug 'vim-scripts/Visual-Studio'       " Visual Studio Colorscheme
 Plug 'vim-scripts/indentpython.vim'    " Special indentation for Python
 Plug 'vim-scripts/sessionman.vim'      " An easy to use session manager.
+Plug 'vim-scripts/SyntaxRange'         " Define a different filetype syntax on regions in a buffer
+Plug 'vim-scripts/Visual-Studio'       " Visual Studio Colorscheme
 Plug 'vim/killersheep'                 " God help us all
 Plug 'whatyouhide/vim-gotham'          " Color scheme
 Plug 'xstrex/FireCode.vim'             " FireCode colorscheme
