@@ -107,15 +107,16 @@ source $HOME/.vim/mdnav_settings.vim
 source $HOME/.vim/neomake_settings.vim
 source $HOME/.vim/netrw_settings.vim
 source $HOME/.vim/seiya_settings.vim
+source $HOME/.vim/tab_settings.vim
 source $HOME/.vim/tagbar_settings.vim
 source $HOME/.vim/template_settings.vim
 source $HOME/.vim/vimwiki_settings.vim
 source $HOME/.vim/whitespace_settings.vim
 
 set background=dark
-"source $HOME/.vim/base16.vim
+source $HOME/.vim/base16.vim
 "colorscheme VisualStudioDark
-colorscheme ekvoli
+"colorscheme ekvoli
 
 "source $HOME/.vim/terminal_colors.vim
 

@@ -9,6 +9,7 @@ Plug 'arcticicestudio/nord-vim'        " Nordic ice colorscheme.
 Plug 'arzg/vim-substrata'              " A cold dark colorscheme.
 Plug 'caglartoklu/borlandp.vim'        " A classic Borland like colorscheme.
 Plug 'chase/focuspoint-vim'            " focuspoint colorscheme
+Plug 'chrisbra/Colorizer'              " Highlight colors.
 Plug 'cocopon/iceberg.vim'             " Keep those colorschemes coming...
 Plug 'craigemery/vim-autotag'          " Automatically update ctags on save.
 Plug 'ctrlpvim/ctrlp.vim'              " Fuzzy find files.

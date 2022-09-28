@@ -2,6 +2,7 @@
 " Based on config example from Ian's Website.
 " https://ianding.io/2019/07/29/configure-coc-nvim-for-c-c++-development/
 " -------------------------------------------------------------------
+"
 
 " if hidden is not set, TextEdit might fail.
 set hidden
@@ -22,25 +23,8 @@ set shortmess+=c
 " always show signcolumns
 " set signcolumn=yes
 
-" Use tab for trigger completion with characters ahead and navigate.
-" Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
-
 " Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
-
-" Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
-" Coc only does snippet and additional edit on confirm.
-inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 " Use `[c` and `]c` to navigate diagnostics
 nmap <silent> [c <Plug>(coc-diagnostic-prev)
@@ -116,3 +100,14 @@ nnoremap <silent> <leader><space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <leader><space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <leader><space>p  :<C-u>CocListResume<CR>
+
+let g:coc_global_extensions = [
+    \'coc-clangd',
+    \'coc-discord-rpc',
+    \'coc-htmldjango',
+    \'coc-java',
+    \'coc-json',
+    \'coc-pyright',
+    \'coc-rls',
+    \'coc-tsserver'
+    \]
