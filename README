@@ -1,4 +1,4 @@
-------- Lee's Vim Configs -------
+------- Lain's Vim Configs -------
 
 These are my personal Vim configs.  They are a collection of my vimrc,
 gvimrc, plugins, extra syntax files, and color schemes I have collected.
@@ -9,7 +9,7 @@ below.
 
 ------- Plugins and Such -------
 
-ScrollColor.vim:   
+ScrollColor.vim:
    Enables a command ":SCROLL" which allows you to scroll through all of your
    installed colorschemes and see which one you like with your currently open
    buffers.
@@ -38,5 +38,3 @@ pacificc (gvim):
 lainproliant (vim)
    A theme I'm working on.  For color terminals, loosely based on pacificc,
    but written before it, so maybe not.
-
-
