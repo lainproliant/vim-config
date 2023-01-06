@@ -1,6 +1,8 @@
 call plug#begin('~/.vim/user-plugs')
 
-"Plug 'Valloric/YouCompleteMe'          " A semantic completer for C/C++ and Python
+" Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install() }}
+Plug 'Valloric/YouCompleteMe'          " A semantic completer for C/C++ and Python
+
 Plug 'abnt713/vim-hashpunk'            " hashpunk colorschemes
 Plug 'alfredodeza/pytest.vim'          " pytest integration for vim
 Plug 'aperezdc/vim-template'           " A VIM plugin for managing templates.
@@ -9,7 +11,6 @@ Plug 'arcticicestudio/nord-vim'        " Nordic ice colorscheme.
 Plug 'arzg/vim-substrata'              " A cold dark colorscheme.
 Plug 'caglartoklu/borlandp.vim'        " A classic Borland like colorscheme.
 Plug 'chase/focuspoint-vim'            " focuspoint colorscheme
-Plug 'chrisbra/Colorizer'              " Highlight colors.
 Plug 'cocopon/iceberg.vim'             " Keep those colorschemes coming...
 Plug 'craigemery/vim-autotag'          " Automatically update ctags on save.
 Plug 'ctrlpvim/ctrlp.vim'              " Fuzzy find files.
@@ -21,6 +22,7 @@ Plug 'fcpg/vim-farout'                 " Far-Out retro colorscheme
 Plug 'fisadev/vim-isort'               " Adds the :Isort command to sort python imports.
 Plug 'flazz/vim-colorschemes'          " More Colorschemes
 Plug 'fs111/pydoc.vim'                 " Pydoc integration.
+Plug 'gko/vim-coloresque'              " highlight colors
 Plug 'hauleth/blame.vim'               " Another good color scheme.
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' } " Newer markdown previewer.
 Plug 'itchyny/calendar.vim'            " Vim-TUI interface to Google Calendar
@@ -38,7 +40,6 @@ Plug 'liuchengxu/vista.vim'            " LSP compatible tagbar replacement.
 Plug 'manasthakur/vim-commentor'       " Automatically comment/uncomment
 Plug 'mnishz/colorscheme-preview.vim'  " A modern colorscheme previewer with Vim8 popup window
 Plug 'mswift42/vim-themes'             " Colorschemes ported from Emacs.
-Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install() }}
 Plug 'neomake/neomake'                 " Async syntax linter
 Plug 'nixprime/cpsm'                   " Context aware find helper for ctrlp
 Plug 'ntpeters/vim-better-whitespace'  " Highlight/strip whitespace and such.

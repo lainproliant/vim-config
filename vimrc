@@ -40,7 +40,6 @@ if exists('+termguicolors')
   let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
   set termguicolors
 endif
-"hi SignColumn guibg=NONE
 
 " Automatically resize splits to equal size.
 autocmd VimResized * wincmd =
@@ -97,7 +96,8 @@ source $HOME/.vim/calendar_settings.vim
 source $HOME/.vim/checkbox_settings.vim
 source $HOME/.vim/choosewin_settings.vim
 source $HOME/.vim/colorizer_settings.vim
-source $HOME/.vim/coc_settings.vim
+"source $HOME/.vim/coc_settings.vim
+source $HOME/.vim/ycm_settings.vim
 source $HOME/.vim/ctrlp_settings.vim
 source $HOME/.vim/easymotion_settings.vim
 source $HOME/.vim/gnupg_settings.vim
@@ -114,17 +114,21 @@ source $HOME/.vim/vimwiki_settings.vim
 source $HOME/.vim/whitespace_settings.vim
 
 set background=dark
-source $HOME/.vim/base16.vim
+"source $HOME/.vim/base16.vim
+"colorscheme FireCode
 "colorscheme VisualStudioDark
-"colorscheme ekvoli
+colorscheme ekvoli-ng
 
 "source $HOME/.vim/terminal_colors.vim
 
 " Make the gutter have no background color.
 "hi Normal guibg=NONE ctermbg=000000
 "hi NonText guibg=NONE ctermbg=000000
-hi SpellCap guibg=#3f3f00
+"hi SpellCap guibg=#3f3f00
+"hi SignColumn guibg=NONE
 
+hi TabLine term=bold cterm=bold ctermbg=0
+hi TabLineFill term=bold cterm=bold ctermbg=0
 
 " Create the file under the cursor and open for editing.
 map <leader>gf :e <cfile><cr>
