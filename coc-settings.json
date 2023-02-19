@@ -1,4 +1,6 @@
 {
     "suggest.noselect": true,
-    "clangd.inlayHints.enable": false
+    "inlayHint.enable": false,
+    "pyright.inlayHints.variableTypes": false,
+    "pyright.inlayHints.functionReturnTypes": false
 }

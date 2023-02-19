@@ -1,7 +1,7 @@
 call plug#begin('~/.vim/user-plugs')
 
-" Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install() }}
-Plug 'Valloric/YouCompleteMe'          " A semantic completer for C/C++ and Python
+Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install() }}
+"Plug 'Valloric/YouCompleteMe'          " A semantic completer for C/C++ and Python
 
 Plug 'abnt713/vim-hashpunk'            " hashpunk colorschemes
 Plug 'alfredodeza/pytest.vim'          " pytest integration for vim

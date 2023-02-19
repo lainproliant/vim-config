@@ -44,7 +44,8 @@ let pylint_cexts = [
       \ 'passlib'
       \ ]
 
-let g:neomake_python_enabled_makers = ['flake8', 'pylint', 'mypy']
+"let g:neomake_python_enabled_makers = ['flake8', 'pylint', 'mypy']
+let g:neomake_python_enabled_makers = ['flake8', 'mypy']
 let g:neomake_python_pylint_maker = {
       \ 'args': ['--disable=' . join(pylint_ignore, ','),
       \          '--extension-pkg-whitelist=' . join(pylint_cexts, ','),]
