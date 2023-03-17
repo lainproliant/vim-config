@@ -102,6 +102,7 @@ source $HOME/.vim/coc_settings.vim
 source $HOME/.vim/ctrlp_settings.vim
 source $HOME/.vim/easymotion_settings.vim
 source $HOME/.vim/gnupg_settings.vim
+source $HOME/.vim/highlight.vim
 source $HOME/.vim/insert_macros.vim
 source $HOME/.vim/markdown_settings.vim
 source $HOME/.vim/mdnav_settings.vim
@@ -113,23 +114,6 @@ source $HOME/.vim/tagbar_settings.vim
 source $HOME/.vim/template_settings.vim
 source $HOME/.vim/vimwiki_settings.vim
 source $HOME/.vim/whitespace_settings.vim
-
-set background=dark
-"source $HOME/.vim/base16.vim
-"colorscheme FireCode
-"colorscheme VisualStudioDark
-colorscheme ekvoli-ng
-
-"source $HOME/.vim/terminal_colors.vim
-
-" Make the gutter have no background color.
-"hi Normal guibg=NONE ctermbg=000000
-"hi NonText guibg=NONE ctermbg=000000
-"hi SpellCap guibg=#3f3f00
-"hi SignColumn guibg=NONE
-
-hi TabLine term=bold cterm=bold ctermbg=0
-hi TabLineFill term=bold cterm=bold ctermbg=0
 
 " Create the file under the cursor and open for editing.
 map <leader>gf :e <cfile><cr>
