@@ -96,9 +96,8 @@ source $HOME/.vim/autoflake_settings.vim
 source $HOME/.vim/calendar_settings.vim
 source $HOME/.vim/checkbox_settings.vim
 source $HOME/.vim/choosewin_settings.vim
-source $HOME/.vim/colorizer_settings.vim
 source $HOME/.vim/coc_settings.vim
-"source $HOME/.vim/ycm_settings.vim
+source $HOME/.vim/colorizer_settings.vim
 source $HOME/.vim/ctrlp_settings.vim
 source $HOME/.vim/easymotion_settings.vim
 source $HOME/.vim/gnupg_settings.vim
@@ -109,11 +108,13 @@ source $HOME/.vim/mdnav_settings.vim
 source $HOME/.vim/neomake_settings.vim
 source $HOME/.vim/netrw_settings.vim
 source $HOME/.vim/seiya_settings.vim
+source $HOME/.vim/session_settings.vim
 source $HOME/.vim/tab_settings.vim
 source $HOME/.vim/tagbar_settings.vim
 source $HOME/.vim/template_settings.vim
 source $HOME/.vim/vimwiki_settings.vim
 source $HOME/.vim/whitespace_settings.vim
+"source $HOME/.vim/ycm_settings.vim
 
 " Create the file under the cursor and open for editing.
 map <leader>gf :e <cfile><cr>

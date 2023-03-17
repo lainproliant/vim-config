@@ -71,5 +71,7 @@ Plug 'vim-scripts/SyntaxRange'         " Define a different filetype syntax on r
 Plug 'vim-scripts/Visual-Studio'       " Visual Studio Colorscheme
 Plug 'vim/killersheep'                 " God help us all
 Plug 'whatyouhide/vim-gotham'          " Color scheme
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-session'
 Plug 'xstrex/FireCode.vim'             " FireCode colorscheme
 call plug#end()
