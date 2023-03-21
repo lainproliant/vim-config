@@ -69,6 +69,7 @@ Plug 'vim-scripts/indentpython.vim'    " Special indentation for Python
 Plug 'vim-scripts/sessionman.vim'      " An easy to use session manager.
 Plug 'vim-scripts/SyntaxRange'         " Define a different filetype syntax on regions in a buffer
 Plug 'vim-scripts/Visual-Studio'       " Visual Studio Colorscheme
+Plug 'vim-test/vim-test'               " testing at the speed of thought
 Plug 'vim/killersheep'                 " God help us all
 Plug 'whatyouhide/vim-gotham'          " Color scheme
 Plug 'xolox/vim-misc'
