@@ -125,7 +125,7 @@ let g:coc_global_extensions = [
     \'coc-htmldjango',
     \'coc-java',
     \'coc-json',
-    \'coc-pyright',
+    \'coc-jedi',
     \'coc-rls',
     \'coc-tsserver'
     \]
