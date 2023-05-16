@@ -43,7 +43,8 @@ hi IncSearch 		guibg=#667799 guifg=white gui=bold
 
 hi SpecialKey		guifg=#00c0e0
 hi Directory		guifg=#00c0e0
-hi Title			guifg=#6000a0 gui=none
+hi Title			guifg=lightblue guibg=#202060 gui=underline
+hi def link         mkdHeading       Title
 hi WarningMsg		guifg=lightblue
 hi WildMenu			guifg=white guibg=#0080c0
 hi Pmenu			guifg=white guibg=#005090
