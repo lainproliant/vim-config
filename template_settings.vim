@@ -1,1 +1,1 @@
-template_settings_default.vim
+template_settings_hearst.vim
