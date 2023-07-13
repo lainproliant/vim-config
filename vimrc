@@ -110,9 +110,9 @@ source $HOME/.vim/netrw_settings.vim
 source $HOME/.vim/seiya_settings.vim
 source $HOME/.vim/session_settings.vim
 source $HOME/.vim/tab_settings.vim
-source $HOME/.vim/tagbar_settings.vim
 source $HOME/.vim/template_settings.vim
 source $HOME/.vim/vimwiki_settings.vim
+source $HOME/.vim/vista_settings.vim
 source $HOME/.vim/whitespace_settings.vim
 "source $HOME/.vim/ycm_settings.vim
 
