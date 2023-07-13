@@ -17,6 +17,7 @@ Plug 'ctrlpvim/ctrlp.vim'              " Fuzzy find files.
 Plug 'ddrscott/vim-side-search'        " Another async grep, :SideSearch
 Plug 'dracula/vim', { 'as': 'dracula' } " Dracula colorscheme
 Plug 'easymotion/vim-easymotion'       " Quickly move to areas in a buffer using alphabetic hints
+Plug 'enricobacis/paste.vim'
 Plug 'enricobacis/vim-airline-clock'   " A clock for vim-airline, powered by Vim8 timers
 Plug 'fcpg/vim-farout'                 " Far-Out retro colorscheme
 Plug 'fisadev/vim-isort'               " Adds the :Isort command to sort python imports.
