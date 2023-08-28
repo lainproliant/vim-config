@@ -57,6 +57,7 @@ Plug 'rhysd/vim-clang-format'          " Format C family code automatically
 Plug 'Rigellute/shades-of-purple.vim'  " A purple theme
 Plug 'scottymoon/vim-twilight'         " twilight colorscheme
 Plug 't9md/vim-choosewin'              " Quickly switch between buffers by letter
+Plug 'tell-k/vim-autoflake'            " A command to run autoflake
 Plug 'tmhedberg/SimpylFold'            " Proper folding for Python
 Plug 'tpope/vim-fugitive'              " A Git Wrapper
 Plug 'tpope/vim-surround'              " Parenthesis and other types of wraps helper
