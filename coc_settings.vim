@@ -101,6 +101,10 @@ command! -nargs=0 Organize   :call     CocAction('runCommand', 'editor.action.or
 " Add status line support, for integration with other plugin, checkout `:h coc-status`
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
+" Use LucHermitte's SplitIfNotOpen4COC command to open new splits for files.
+let g:coc_user_config = {}
+let g:coc_user_config['coc.preferences.jumpCommand'] = ':SplitIfNotOpen4COC'
+
 " Using CocList
 " Show all diagnostics
 nnoremap <silent> <leader><space>a  :<C-u>CocList diagnostics<cr>

@@ -92,7 +92,6 @@ source $HOME/.vim/debug_scriptnames.vim
 " Include context-specific configs.
 source $HOME/.vim/ack_settings.vim
 source $HOME/.vim/airline_settings.vim
-source $HOME/.vim/autoflake_settings.vim
 source $HOME/.vim/calendar_settings.vim
 source $HOME/.vim/checkbox_settings.vim
 source $HOME/.vim/choosewin_settings.vim

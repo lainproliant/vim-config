@@ -1,6 +1,24 @@
 {
     "suggest.noselect": true,
     "inlayHint.enable": false,
-    "pyright.inlayHints.variableTypes": false,
-    "pyright.inlayHints.functionReturnTypes": false
+    "jedi.enable": true,
+    "jedi.startupMessage": true,
+    "jedi.markupKindPreferred": "markdown",
+    "jedi.trace.server": "messages",
+    "jedi.jediSettings.autoImportModules": [],
+    "jedi.codeAction.nameExtractFunction": "jls_extract_def",
+    "jedi.codeAction.nameExtractVariable": "jls_extract_var",
+    "jedi.completion.disableSnippets": false,
+    "jedi.completion.resolveEagerly": false,
+    "jedi.completion.ignorePatterns": [],
+    "jedi.diagnostics.enable": true,
+    "jedi.diagnostics.didOpen": true,
+    "jedi.diagnostics.didChange": true,
+    "jedi.diagnostics.didSave": true,
+    "jedi.hover.enable": true,
+    "jedi.hover.disable.keyword.all": false,
+    "jedi.hover.disable.keyword.names": [],
+    "jedi.hover.disable.keyword.fullNames": [],
+    "jedi.workspace.extraPaths": [],
+    "jedi.workspace.symbols.maxSymbols": 0
 }

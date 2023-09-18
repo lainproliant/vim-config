@@ -1,7 +1,7 @@
 " --- vim-template settings ---
 let g:templates_fuzzy_start = 0
 let g:templates_no_builtin_templates=1
-let g:email="lain.musgrove@hearst.com"
+let g:email="lain.proliant@gmail.com"
 let g:templates_directory="~/.vim/templates/default"
 let g:username="Lain Musgrove"
 let g:license="MIT"

@@ -38,6 +38,7 @@ Plug 'lainproliant/VisualStudioDark.vim'    " Dark Visual Studio theme
 Plug 'leafgarland/typescript-vim'      " Typescript support
 Plug 'letorbi/vim-colors-borland'      " A Borland like modern colorscheme.
 Plug 'liuchengxu/vista.vim'            " LSP compatible tagbar replacement.
+Plug 'LucHermitte/lh-vim-lib'          " LucHermitte's useful functions lib.
 Plug 'manasthakur/vim-commentor'       " Automatically comment/uncomment
 Plug 'mnishz/colorscheme-preview.vim'  " A modern colorscheme previewer with Vim8 popup window
 Plug 'mswift42/vim-themes'             " Colorschemes ported from Emacs.
@@ -57,7 +58,6 @@ Plug 'rhysd/vim-clang-format'          " Format C family code automatically
 Plug 'Rigellute/shades-of-purple.vim'  " A purple theme
 Plug 'scottymoon/vim-twilight'         " twilight colorscheme
 Plug 't9md/vim-choosewin'              " Quickly switch between buffers by letter
-Plug 'tell-k/vim-autoflake'            " A command to run autoflake
 Plug 'tmhedberg/SimpylFold'            " Proper folding for Python
 Plug 'tpope/vim-fugitive'              " A Git Wrapper
 Plug 'tpope/vim-surround'              " Parenthesis and other types of wraps helper
