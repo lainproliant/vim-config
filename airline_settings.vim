@@ -1,4 +1,4 @@
-let g:airline_theme='papercolor'
+let g:airline_theme='base16'
 
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
