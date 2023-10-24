@@ -11,41 +11,41 @@
 "   let g:base16_shell_path=base16-builder/output/shell/
 if !has("gui_running")
   if exists("g:base16_shell_path")
-    execute "silent !/bin/sh ".g:base16_shell_path."/base16-ekvoli.sh"
+    execute "silent !/bin/sh ".g:base16_shell_path."/base16-ekvoli-delta.sh"
   endif
 endif
 
 " GUI color definitions
-let s:gui00        = "001535"
-let g:base16_gui00 = "001535"
-let s:gui01        = "005090"
-let g:base16_gui01 = "005090"
-let s:gui02        = "2080c0"
-let g:base16_gui02 = "2080c0"
-let s:gui03        = "9590d5"
-let g:base16_gui03 = "9590d5"
+let s:gui00        = "351f00"
+let g:base16_gui00 = "351f00"
+let s:gui01        = "904000"
+let g:base16_gui01 = "904000"
+let s:gui02        = "c05f1f"
+let g:base16_gui02 = "c05f1f"
+let s:gui03        = "cfd590"
+let g:base16_gui03 = "cfd590"
 let s:gui04        = "ffffff"
 let g:base16_gui04 = "ffffff"
 let s:gui05        = "ffffff"
 let g:base16_gui05 = "ffffff"
-let s:gui06        = "32aeff"
-let g:base16_gui06 = "32aeff"
+let s:gui06        = "ff8331"
+let g:base16_gui06 = "ff8331"
 let s:gui07        = "ffffff"
 let g:base16_gui07 = "ffffff"
-let s:gui08        = "0047a7"
-let g:base16_gui08 = "0047a7"
-let s:gui09        = "7fe9ff"
-let g:base16_gui09 = "7fe9ff"
-let s:gui0A        = "3f8fff"
-let g:base16_gui0A = "3f8fff"
-let s:gui0B        = "50e0ff"
-let g:base16_gui0B = "50e0ff"
-let s:gui0C        = "50a0e0"
-let g:base16_gui0C = "50a0e0"
-let s:gui0D        = "00a0f0"
-let g:base16_gui0D = "00a0f0"
-let s:gui0E        = "90bfd0"
-let g:base16_gui0E = "90bfd0"
+let s:gui08        = "a76000"
+let g:base16_gui08 = "a76000"
+let s:gui09        = "ff957f"
+let g:base16_gui09 = "ff957f"
+let s:gui0A        = "ffaf3e"
+let g:base16_gui0A = "ffaf3e"
+let s:gui0B        = "ff6e4f"
+let g:base16_gui0B = "ff6e4f"
+let s:gui0C        = "e09050"
+let g:base16_gui0C = "e09050"
+let s:gui0D        = "f05000"
+let g:base16_gui0D = "f05000"
+let s:gui0E        = "d0a190"
+let g:base16_gui0E = "d0a190"
 let s:gui0F        = "ffffff"
 let g:base16_gui0F = "ffffff"
 
@@ -100,21 +100,21 @@ endif
 
 " Neovim terminal colours
 if has("nvim")
-  let g:terminal_color_0 =  "#001535"
-  let g:terminal_color_1 =  "#0047a7"
-  let g:terminal_color_2 =  "#50e0ff"
-  let g:terminal_color_3 =  "#3f8fff"
-  let g:terminal_color_4 =  "#00a0f0"
-  let g:terminal_color_5 =  "#90bfd0"
-  let g:terminal_color_6 =  "#50a0e0"
+  let g:terminal_color_0 =  "#351f00"
+  let g:terminal_color_1 =  "#a76000"
+  let g:terminal_color_2 =  "#ff6e4f"
+  let g:terminal_color_3 =  "#ffaf3e"
+  let g:terminal_color_4 =  "#f05000"
+  let g:terminal_color_5 =  "#d0a190"
+  let g:terminal_color_6 =  "#e09050"
   let g:terminal_color_7 =  "#ffffff"
-  let g:terminal_color_8 =  "#9590d5"
-  let g:terminal_color_9 =  "#0047a7"
-  let g:terminal_color_10 = "#50e0ff"
-  let g:terminal_color_11 = "#3f8fff"
-  let g:terminal_color_12 = "#00a0f0"
-  let g:terminal_color_13 = "#90bfd0"
-  let g:terminal_color_14 = "#50a0e0"
+  let g:terminal_color_8 =  "#cfd590"
+  let g:terminal_color_9 =  "#a76000"
+  let g:terminal_color_10 = "#ff6e4f"
+  let g:terminal_color_11 = "#ffaf3e"
+  let g:terminal_color_12 = "#f05000"
+  let g:terminal_color_13 = "#d0a190"
+  let g:terminal_color_14 = "#e09050"
   let g:terminal_color_15 = "#ffffff"
   let g:terminal_color_background = g:terminal_color_0
   let g:terminal_color_foreground = g:terminal_color_5
@@ -124,21 +124,21 @@ if has("nvim")
   endif
 elseif has("terminal")
   let g:terminal_ansi_colors = [
-        \ "#001535",
-        \ "#0047a7",
-        \ "#50e0ff",
-        \ "#3f8fff",
-        \ "#00a0f0",
-        \ "#90bfd0",
-        \ "#50a0e0",
+        \ "#351f00",
+        \ "#a76000",
+        \ "#ff6e4f",
+        \ "#ffaf3e",
+        \ "#f05000",
+        \ "#d0a190",
+        \ "#e09050",
         \ "#ffffff",
-        \ "#9590d5",
-        \ "#0047a7",
-        \ "#50e0ff",
-        \ "#3f8fff",
-        \ "#00a0f0",
-        \ "#90bfd0",
-        \ "#50a0e0",
+        \ "#cfd590",
+        \ "#a76000",
+        \ "#ff6e4f",
+        \ "#ffaf3e",
+        \ "#f05000",
+        \ "#d0a190",
+        \ "#e09050",
         \ "#ffffff",
         \ ]
 endif
@@ -146,7 +146,7 @@ endif
 " Theme setup
 hi clear
 syntax reset
-let g:colors_name = "base16-ekvoli"
+let g:colors_name = "base16-ekvoli-delta"
 
 " Highlighting function
 " Optional variables are attributes and guisp
