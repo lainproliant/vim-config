@@ -1,8 +1,6 @@
 call plug#begin('~/.vim/user-plugs')
 
-Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install() }}
 "Plug 'Valloric/YouCompleteMe'          " A semantic completer for C/C++ and Python
-
 Plug 'abnt713/vim-hashpunk'            " hashpunk colorschemes
 Plug 'alfredodeza/pytest.vim'          " pytest integration for vim
 Plug 'aperezdc/vim-template'           " A VIM plugin for managing templates.
@@ -34,14 +32,17 @@ Plug 'jlanzarotta/bufexplorer'         " Easy manipulation of buffers.
 Plug 'jremmen/vim-ripgrep'             " Ripgrep for vim
 Plug 'junegunn/goyo.vim'               " Cleanroom for writing, use :Goyo
 Plug 'justinmk/vim-syntax-extra'       " Vim syntax highlighting for c, bison, flex
+Plug 'lainproliant/ekvoli-ng'    " Ekvoli and HSV rotated variants
 Plug 'lainproliant/VisualStudioDark.vim'    " Dark Visual Studio theme
 Plug 'leafgarland/typescript-vim'      " Typescript support
 Plug 'letorbi/vim-colors-borland'      " A Borland like modern colorscheme.
 Plug 'liuchengxu/vista.vim'            " LSP compatible tagbar replacement.
 Plug 'LucHermitte/lh-vim-lib'          " LucHermitte's useful functions lib.
+Plug 'madox2/vim-ai'                   " OpenAI integration for code gen.
 Plug 'manasthakur/vim-commentor'       " Automatically comment/uncomment
 Plug 'mnishz/colorscheme-preview.vim'  " A modern colorscheme previewer with Vim8 popup window
 Plug 'mswift42/vim-themes'             " Colorschemes ported from Emacs.
+Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install() }}
 Plug 'neomake/neomake'                 " Async syntax linter
 Plug 'nixprime/cpsm'                   " Context aware find helper for ctrlp
 Plug 'ntpeters/vim-better-whitespace'  " Highlight/strip whitespace and such.
