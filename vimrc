@@ -101,6 +101,7 @@ source $HOME/.vim/ctrlp_settings.vim
 source $HOME/.vim/easymotion_settings.vim
 source $HOME/.vim/gnupg_settings.vim
 source $HOME/.vim/highlight.vim
+source $HOME/.vim/python_settings.vim
 source $HOME/.vim/insert_macros.vim
 source $HOME/.vim/markdown_settings.vim
 source $HOME/.vim/mdnav_settings.vim
