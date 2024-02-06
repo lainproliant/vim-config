@@ -24,7 +24,8 @@ set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
 set shiftwidth=4     " Number of spaces used for each step of indention.
 set showmatch        " Show matching parenthesis and brackets and stuff.
 set showmode         " Show the current editing mode at the bottom.
-set signcolumn=no
+set signcolumn=number
+set number
 set smartindent      " Smart indentation.
 set softtabstop=4    " The number of spaces inserted by Tab in insert mode.
 set splitbelow
@@ -91,6 +92,7 @@ source $HOME/.vim/debug_scriptnames.vim
 
 " Include context-specific configs.
 source $HOME/.vim/ack_settings.vim
+source $HOME/.vim/ale_settings.vim
 source $HOME/.vim/airline_settings.vim
 source $HOME/.vim/calendar_settings.vim
 source $HOME/.vim/checkbox_settings.vim
@@ -105,7 +107,6 @@ source $HOME/.vim/python_settings.vim
 source $HOME/.vim/insert_macros.vim
 source $HOME/.vim/markdown_settings.vim
 source $HOME/.vim/mdnav_settings.vim
-source $HOME/.vim/neomake_settings.vim
 source $HOME/.vim/netrw_settings.vim
 source $HOME/.vim/seiya_settings.vim
 source $HOME/.vim/session_settings.vim

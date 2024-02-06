@@ -1,7 +1,7 @@
 set background=dark
 "source $HOME/.vim/base16.vim
 "colorscheme VisualStudioDark
-colorscheme ekvoli-ng
+colorscheme ekvoli-hue-0
 
 "source $HOME/.vim/terminal_colors.vim
 

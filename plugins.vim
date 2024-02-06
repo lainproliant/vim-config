@@ -1,6 +1,5 @@
 call plug#begin('~/.vim/user-plugs')
 
-"Plug 'Valloric/YouCompleteMe'          " A semantic completer for C/C++ and Python
 Plug 'abnt713/vim-hashpunk'            " hashpunk colorschemes
 Plug 'alfredodeza/pytest.vim'          " pytest integration for vim
 Plug 'aperezdc/vim-template'           " A VIM plugin for managing templates.
@@ -13,6 +12,7 @@ Plug 'cocopon/iceberg.vim'             " Keep those colorschemes coming...
 Plug 'craigemery/vim-autotag'          " Automatically update ctags on save.
 Plug 'ctrlpvim/ctrlp.vim'              " Fuzzy find files.
 Plug 'ddrscott/vim-side-search'        " Another async grep, :SideSearch
+Plug 'dense-analysis/ale'              " The Asynchronous Lint Engine
 Plug 'dracula/vim', { 'as': 'dracula' } " Dracula colorscheme
 Plug 'easymotion/vim-easymotion'       " Quickly move to areas in a buffer using alphabetic hints
 Plug 'enricobacis/paste.vim'
@@ -43,7 +43,6 @@ Plug 'manasthakur/vim-commentor'       " Automatically comment/uncomment
 Plug 'mnishz/colorscheme-preview.vim'  " A modern colorscheme previewer with Vim8 popup window
 Plug 'mswift42/vim-themes'             " Colorschemes ported from Emacs.
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install() }}
-Plug 'neomake/neomake'                 " Async syntax linter
 Plug 'nixprime/cpsm'                   " Context aware find helper for ctrlp
 Plug 'ntpeters/vim-better-whitespace'  " Highlight/strip whitespace and such.
 Plug 'nvie/vim-flake8'                 " Flake8 integration
