@@ -4,7 +4,7 @@ set autoread
 set background=light " Prevent Vim 8.0 syncolor.vim shenanigans
 set backspace=2         " Allow backspace to work fully in insert mode.
 set cindent          " Enable C-style auto-indenting.
-set cino=g0,+0,(0,j1,:0,N-s,i0,W4,m1
+set cino=g1,+0,(0,j1,:0,N-s,i0,W4,m1
 set completeopt=longest,menuone
 set expandtab        " Tab inserts a number of spaces instead of a tab character.
 set foldlevel=99

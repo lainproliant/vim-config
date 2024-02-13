@@ -1,14 +1,24 @@
+" == ALE Settings ===================================================
 let g:ale_fix_on_save = 1
 let g:ale_echo_msg_format = '%linter%[%code%] %s'
 
 let g:ale_linters_ignore = {
 \ 'python': ["ruff"],
-\ 'cpp': ["cc", "clang"]
+\ 'cpp': ["cc", "clang", "clangtidy"]
 \}
 
-" C/C++ Settings
+" == C/C++ Settings =================================================
+let cpplint_ignore = [
+\    "build/c++11",
+\    "build/header_guard",
+\    "whitespace/operators",
+\    "legal/copyright",
+\    "whitespace/blank_line"
+\]
 
-" Python Settings
+let g:ale_cpp_cpplint_options = "--filter=-" . join(cpplint_ignore, ",-") . " --linelength=120"
+
+" == Python Settings ================================================
 let g:ale_python_auto_pipenv = 1
 let g:ale_python_mypy_change_directory=0
 let g:ale_python_pylint_change_directory=0
