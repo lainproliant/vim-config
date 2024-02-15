@@ -4,19 +4,25 @@ let g:ale_echo_msg_format = '%linter%[%code%] %s'
 
 let g:ale_linters_ignore = {
 \ 'python': ["ruff"],
-\ 'cpp': ["cc", "clang", "clangtidy"]
+\ 'cpp': ["cc", "clang", "clangtidy", "clangcheck"]
 \}
 
 " == C/C++ Settings =================================================
-let cpplint_ignore = [
-\    "build/c++11",
+let clint_ignore = [
 \    "build/header_guard",
 \    "whitespace/operators",
 \    "legal/copyright",
 \    "whitespace/blank_line"
 \]
 
+let cpplint_ignore = clint_ignore + [
+\    "build/c++11",
+\]
+
 let g:ale_cpp_cpplint_options = "--filter=-" . join(cpplint_ignore, ",-") . " --linelength=120"
+let g:ale_cpp_clint_options = "--filter=" . join(clint_ignore, ",-") . " --linelength=120"
+let g:ale_c_cpplint_options = "--filter=-" . join(cpplint_ignore, ",-") . " --linelength=120"
+let g:ale_c_clint_options = "--filter=" . join(clint_ignore, ",-") . " --linelength=120"
 
 " == Python Settings ================================================
 let g:ale_python_auto_pipenv = 1
