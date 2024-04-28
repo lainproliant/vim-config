@@ -10,7 +10,6 @@ Plug 'caglartoklu/borlandp.vim'        " A classic Borland like colorscheme.
 Plug 'chase/focuspoint-vim'            " focuspoint colorscheme
 Plug 'cocopon/iceberg.vim'             " Keep those colorschemes coming...
 Plug 'craigemery/vim-autotag'          " Automatically update ctags on save.
-Plug 'ctrlpvim/ctrlp.vim'              " Fuzzy find files.
 Plug 'ddrscott/vim-side-search'        " Another async grep, :SideSearch
 Plug 'dense-analysis/ale'              " The Asynchronous Lint Engine
 Plug 'dracula/vim', { 'as': 'dracula' } " Dracula colorscheme
@@ -32,6 +31,8 @@ Plug 'jlanzarotta/bufexplorer'         " Easy manipulation of buffers.
 Plug 'jremmen/vim-ripgrep'             " Ripgrep for vim
 Plug 'junegunn/goyo.vim'               " Cleanroom for writing, use :Goyo
 Plug 'justinmk/vim-syntax-extra'       " Vim syntax highlighting for c, bison, flex
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'lainproliant/ekvoli-ng'    " Ekvoli and HSV rotated variants
 Plug 'lainproliant/VisualStudioDark.vim'    " Dark Visual Studio theme
 Plug 'leafgarland/typescript-vim'      " Typescript support
@@ -43,7 +44,6 @@ Plug 'manasthakur/vim-commentor'       " Automatically comment/uncomment
 Plug 'mnishz/colorscheme-preview.vim'  " A modern colorscheme previewer with Vim8 popup window
 Plug 'mswift42/vim-themes'             " Colorschemes ported from Emacs.
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install() }}
-Plug 'nixprime/cpsm'                   " Context aware find helper for ctrlp
 Plug 'ntpeters/vim-better-whitespace'  " Highlight/strip whitespace and such.
 Plug 'nvie/vim-flake8'                 " Flake8 integration
 Plug 'pangloss/vim-javascript'         " Vim indentation
