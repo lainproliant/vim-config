@@ -1,13 +1,22 @@
 " == ALE Settings ===================================================
 let g:ale_fix_on_save = 1
 let g:ale_echo_msg_format = '%linter%[%code%] %s'
+let g:ale_lint_delay = 25
+let g:ale_lint_on_text_changed = 'always'
 
 let g:ale_linters_ignore = {
 \ 'python': ["ruff"],
-\ 'cpp': ["cc", "clang", "clangd", "clangtidy", "clangcheck"]
+\ 'cpp': ["clangtidy", "clangcheck"]
 \}
 
 " == C/C++ Settings =================================================
+" Lint .h files as C++, not C
+let g:ale_cpp_cc_options = "-std=c++2a -Wall"
+
+let clangd_ignore = [
+\    "unused-includes"
+\]
+
 let clint_ignore = [
 \    "build/header_guard",
 \    "whitespace/operators",
@@ -19,6 +28,7 @@ let cpplint_ignore = clint_ignore + [
 \    "build/c++11",
 \]
 
+let g:ale_cpp_clangd_options = "--filter=-" . join(clangd_ignore, ",-") . " --linelength=120"
 let g:ale_cpp_cpplint_options = "--filter=-" . join(cpplint_ignore, ",-") . " --linelength=120"
 let g:ale_cpp_clint_options = "--filter=" . join(clint_ignore, ",-") . " --linelength=120"
 let g:ale_c_cpplint_options = "--filter=-" . join(cpplint_ignore, ",-") . " --linelength=120"
