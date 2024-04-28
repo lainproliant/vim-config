@@ -123,6 +123,9 @@ nnoremap <silent> <leader><space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <leader><space>p  :<C-u>CocListResume<CR>
 
+" I'm using ALE for diagnostics so we don't need CoC to dup effort.
+let g:coc_diagnostics_disable = 1
+
 let g:coc_global_extensions = [
     \'coc-clangd',
     \'coc-discord-rpc',

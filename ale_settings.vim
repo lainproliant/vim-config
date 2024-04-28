@@ -4,7 +4,7 @@ let g:ale_echo_msg_format = '%linter%[%code%] %s'
 
 let g:ale_linters_ignore = {
 \ 'python': ["ruff"],
-\ 'cpp': ["cc", "clang", "clangtidy", "clangcheck"]
+\ 'cpp': ["cc", "clang", "clangd", "clangtidy", "clangcheck"]
 \}
 
 " == C/C++ Settings =================================================
