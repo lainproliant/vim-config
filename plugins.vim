@@ -11,7 +11,7 @@ Plug 'chase/focuspoint-vim'            " focuspoint colorscheme
 Plug 'cocopon/iceberg.vim'             " Keep those colorschemes coming...
 Plug 'craigemery/vim-autotag'          " Automatically update ctags on save.
 Plug 'ddrscott/vim-side-search'        " Another async grep, :SideSearch
-Plug 'dense-analysis/ale'              " The Asynchronous Lint Engine
+"Plug 'dense-analysis/ale'              " The Asynchronous Lint Engine
 Plug 'dracula/vim', { 'as': 'dracula' } " Dracula colorscheme
 Plug 'easymotion/vim-easymotion'       " Quickly move to areas in a buffer using alphabetic hints
 Plug 'enricobacis/paste.vim'

@@ -9,3 +9,4 @@ view
 .mypy_cache
 sessions/default.vim
 template_settings.vim
+user-plugs.bak
