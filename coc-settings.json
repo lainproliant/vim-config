@@ -2,6 +2,7 @@
     "diagnostic.displayByAle": false,
     "inlayHint.enable": false,
     "clangd.disableDiagnostics": false,
+    "eslint.workingDirectories": [{"mode": "auto"}],
     "jedi.codeAction.nameExtractFunction": "jls_extract_def",
     "jedi.codeAction.nameExtractVariable": "jls_extract_var",
     "jedi.completion.disableSnippets": false,

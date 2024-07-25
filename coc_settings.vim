@@ -134,5 +134,6 @@ let g:coc_global_extensions = [
     \'coc-json',
     \'coc-jedi',
     \'coc-rls',
-    \'coc-tsserver'
+    \'coc-tsserver',
+    \'coc-eslint'
     \]
