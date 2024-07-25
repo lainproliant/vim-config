@@ -39,12 +39,20 @@ let g:ale_python_auto_pipenv = 1
 let g:ale_python_mypy_change_directory=0
 let g:ale_python_pylint_change_directory=0
 
-let mypy_options = [
-\ "--ignore-missing-imports",
-\ "--check-untyped-defs"
+let mypy_ignore = [
+\    "import-untyped"
 \]
 
-let g:ale_python_mypy_options = join(mypy_options, " ")
+let mypy_options = [
+\ "--ignore-missing-imports",
+\ "--check-untyped-defs",
+\]
+
+let g:ale_python_mypy_options = join(mypy_options, " ") . " "
+
+for code in mypy_ignore
+    let g:ale_python_mypy_options .= "--disable-error-code=" . code . " "
+endfor
 
 let flake8_ignore = [
 \ "E501",
