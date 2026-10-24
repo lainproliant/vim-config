@@ -70,9 +70,6 @@ map <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
 map <leader>b <C-o>
 map <leader>n <C-i>
 
-" Enable python3 neovim module for vim8
-pythonx import neovim
-
 " Aliases for re-orientation of split windows.
 command! Horizontal   :windo wincmd K
 command! Vertical     :windo wincmd H
