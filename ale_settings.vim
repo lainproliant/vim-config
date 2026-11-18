@@ -33,6 +33,7 @@ let g:ale_cpp_cpplint_options = "--filter=-" . join(cpplint_ignore, ",-") . " --
 let g:ale_cpp_clint_options = "--filter=" . join(clint_ignore, ",-") . " --linelength=120"
 let g:ale_c_cpplint_options = "--filter=-" . join(cpplint_ignore, ",-") . " --linelength=120"
 let g:ale_c_clint_options = "--filter=" . join(clint_ignore, ",-") . " --linelength=120"
+let g:ale_c_cc_options = "-std=posix"
 
 " == Python Settings ================================================
 let g:ale_python_auto_pipenv = 1
